@@ -14,9 +14,9 @@ spec:
   en: 24 stickers
 year: 2026
 tools:
-- Python
-- Skia
-- numpy
+  - Python
+  - Skia
+  - numpy
 summary:
   zh: 从短片里走出来的小章鱼，被剪成了 24 张会动的纸片。
   en: The octopus from the film, cut out of paper into 24 moving stickers.
@@ -32,216 +32,216 @@ hero:
     zh: 章鱼小克表情包的手绘封面
     en: Hand-drawn cover of the Little Ke sticker pack
 spreads:
-- template: scatter
-  text:
-    zh: 早安到晚安
-    en: from good morning to good night
-  pieces:
-  - src: media/zaoan-animated-480.webp
-    poster: media/zaoan-480.webp
-    alt:
-      zh: 小章鱼动态表情：早安
-      en: 'Animated octopus sticker: Good morning'
-    name:
-      zh: 早安
-      en: Good morning
-  - src: media/shuodedui-animated-480.webp
-    poster: media/shuodedui-480.webp
-    alt:
-      zh: 小章鱼动态表情：你说得对
-      en: 'Animated octopus sticker: You’re right'
-    name:
-      zh: 你说得对
-      en: You’re right
-  - src: media/moyu-animated-480.webp
-    poster: media/moyu-480.webp
-    alt:
-      zh: 小章鱼动态表情：摸鱼中
-      en: 'Animated octopus sticker: Taking a break'
-    name:
-      zh: 摸鱼中
-      en: Taking a break
-  - src: media/tietie-animated-480.webp
-    poster: media/tietie-480.webp
-    alt:
-      zh: 小章鱼动态表情：贴贴
-      en: 'Animated octopus sticker: Stay close'
-    name:
-      zh: 贴贴
-      en: Stay close
-  - src: media/shoudao-animated-480.webp
-    poster: media/shoudao-480.webp
-    alt:
-      zh: 小章鱼动态表情：收到
-      en: 'Animated octopus sticker: Got it'
-    name:
-      zh: 收到
-      en: Got it
-  - src: media/gaoding-animated-480.webp
-    poster: media/gaoding-480.webp
-    alt:
-      zh: 小章鱼动态表情：搞定
-      en: 'Animated octopus sticker: All done'
-    name:
-      zh: 搞定
-      en: All done
-  - src: media/hahaha-animated-480.webp
-    poster: media/hahaha-480.webp
-    alt:
-      zh: 小章鱼动态表情：哈哈哈
-      en: 'Animated octopus sticker: Hahaha'
-    name:
-      zh: 哈哈哈
-      en: Hahaha
-  - src: media/haoye-animated-480.webp
-    poster: media/haoye-480.webp
-    alt:
-      zh: 小章鱼动态表情：好耶
-      en: 'Animated octopus sticker: Hooray'
-    name:
-      zh: 好耶
-      en: Hooray
-  - src: media/aini-animated-480.webp
-    poster: media/aini-480.webp
-    alt:
-      zh: 小章鱼动态表情：爱你
-      en: 'Animated octopus sticker: Love you'
-    name:
-      zh: 爱你
-      en: Love you
-  - src: media/baobao-animated-480.webp
-    poster: media/baobao-480.webp
-    alt:
-      zh: 小章鱼动态表情：抱抱
-      en: 'Animated octopus sticker: A hug'
-    name:
-      zh: 抱抱
-      en: A hug
-  - src: media/xiexie-animated-480.webp
-    poster: media/xiexie-480.webp
-    alt:
-      zh: 小章鱼动态表情：谢谢
-      en: 'Animated octopus sticker: Thank you'
-    name:
-      zh: 谢谢
-      en: Thank you
-  - src: media/wenhao-animated-480.webp
-    poster: media/wenhao-480.webp
-    alt:
-      zh: 小章鱼动态表情：问号
-      en: 'Animated octopus sticker: Wait, what?'
-    name:
-      zh: 问号
-      en: Wait, what?
-- template: scatter
-  text:
-    zh: 剪刀留下的奶油色毛边
-    en: the cream edge is the scissor cut
-  pieces:
-  - src: media/wuwu-animated-480.webp
-    poster: media/wuwu-480.webp
-    alt:
-      zh: 小章鱼动态表情：呜呜呜
-      en: 'Animated octopus sticker: Boo-hoo'
-    name:
-      zh: 呜呜呜
-      en: Boo-hoo
-  - src: media/heng-animated-480.webp
-    poster: media/heng-480.webp
-    alt:
-      zh: 小章鱼动态表情：哼
-      en: 'Animated octopus sticker: Hmph'
-    name:
-      zh: 哼
-      en: Hmph
-  - src: media/zhenjing-animated-480.webp
-    poster: media/zhenjing-480.webp
-    alt:
-      zh: 小章鱼动态表情：震惊
-      en: 'Animated octopus sticker: Shocked'
-    name:
-      zh: 震惊
-      en: Shocked
-  - src: media/haixiu-animated-480.webp
-    poster: media/haixiu-480.webp
-    alt:
-      zh: 小章鱼动态表情：害羞
-      en: 'Animated octopus sticker: Feeling shy'
-    name:
-      zh: 害羞
-      en: Feeling shy
-  - src: media/qiuqiu-animated-480.webp
-    poster: media/qiuqiu-480.webp
-    alt:
-      zh: 小章鱼动态表情：求求了
-      en: 'Animated octopus sticker: Pretty please'
-    name:
-      zh: 求求了
-      en: Pretty please
-  - src: media/chigua-animated-480.webp
-    poster: media/chigua-480.webp
-    alt:
-      zh: 小章鱼动态表情：吃瓜
-      en: 'Animated octopus sticker: Here for the drama'
-    name:
-      zh: 吃瓜
-      en: Here for the drama
-  - src: media/sikao-animated-480.webp
-    poster: media/sikao-480.webp
-    alt:
-      zh: 小章鱼动态表情：思考中
-      en: 'Animated octopus sticker: Thinking'
-    name:
-      zh: 思考中
-      en: Thinking
-  - src: media/manglu-animated-480.webp
-    poster: media/manglu-480.webp
-    alt:
-      zh: 小章鱼动态表情：忙碌中
-      en: 'Animated octopus sticker: Busy busy'
-    name:
-      zh: 忙碌中
-      en: Busy busy
-  - src: media/zaima-animated-480.webp
-    poster: media/zaima-480.webp
-    alt:
-      zh: 小章鱼动态表情：在吗
-      en: 'Animated octopus sticker: You there?'
-    name:
-      zh: 在吗
-      en: You there?
-  - src: media/liule-animated-480.webp
-    poster: media/liule-480.webp
-    alt:
-      zh: 小章鱼动态表情：溜了溜了
-      en: 'Animated octopus sticker: Gotta go'
-    name:
-      zh: 溜了溜了
-      en: Gotta go
-  - src: media/meidian-animated-480.webp
-    poster: media/meidian-480.webp
-    alt:
-      zh: 小章鱼动态表情：额度用完了
-      en: 'Animated octopus sticker: Out of credits'
-    name:
-      zh: 额度用完了
-      en: Out of credits
-  - src: media/wanan-animated-480.webp
-    poster: media/wanan-480.webp
-    alt:
-      zh: 小章鱼动态表情：晚安
-      en: 'Animated octopus sticker: Good night'
-    name:
-      zh: 晚安
-      en: Good night
+  - template: scatter
+    text:
+      zh: 早安到晚安
+      en: from good morning to good night
+    pieces:
+      - src: media/zaoan-animated-480.webp
+        poster: media/zaoan-480.webp
+        alt:
+          zh: 小章鱼动态表情：早安
+          en: 'Animated octopus sticker: Good morning'
+        name:
+          zh: 早安٩(๑^o^๑)۶
+          en: Good morning
+      - src: media/shuodedui-animated-480.webp
+        poster: media/shuodedui-480.webp
+        alt:
+          zh: 小章鱼动态表情：你说得对
+          en: 'Animated octopus sticker: You’re right'
+        name:
+          zh: 你说得对
+          en: You’re right
+      - src: media/moyu-animated-480.webp
+        poster: media/moyu-480.webp
+        alt:
+          zh: 小章鱼动态表情：摸鱼中
+          en: 'Animated octopus sticker: Taking a break'
+        name:
+          zh: 摸鱼中
+          en: Taking a break
+      - src: media/tietie-animated-480.webp
+        poster: media/tietie-480.webp
+        alt:
+          zh: 小章鱼动态表情：贴贴
+          en: 'Animated octopus sticker: Stay close'
+        name:
+          zh: 贴贴
+          en: Stay close
+      - src: media/shoudao-animated-480.webp
+        poster: media/shoudao-480.webp
+        alt:
+          zh: 小章鱼动态表情：收到
+          en: 'Animated octopus sticker: Got it'
+        name:
+          zh: 收到
+          en: Got it
+      - src: media/gaoding-animated-480.webp
+        poster: media/gaoding-480.webp
+        alt:
+          zh: 小章鱼动态表情：搞定
+          en: 'Animated octopus sticker: All done'
+        name:
+          zh: 搞定
+          en: All done
+      - src: media/hahaha-animated-480.webp
+        poster: media/hahaha-480.webp
+        alt:
+          zh: 小章鱼动态表情：哈哈哈
+          en: 'Animated octopus sticker: Hahaha'
+        name:
+          zh: 哈哈哈
+          en: Hahaha
+      - src: media/haoye-animated-480.webp
+        poster: media/haoye-480.webp
+        alt:
+          zh: 小章鱼动态表情：好耶
+          en: 'Animated octopus sticker: Hooray'
+        name:
+          zh: 好耶
+          en: Hooray
+      - src: media/aini-animated-480.webp
+        poster: media/aini-480.webp
+        alt:
+          zh: 小章鱼动态表情：爱你
+          en: 'Animated octopus sticker: Love you'
+        name:
+          zh: 爱你
+          en: Love you
+      - src: media/baobao-animated-480.webp
+        poster: media/baobao-480.webp
+        alt:
+          zh: 小章鱼动态表情：抱抱
+          en: 'Animated octopus sticker: A hug'
+        name:
+          zh: 抱抱
+          en: A hug
+      - src: media/xiexie-animated-480.webp
+        poster: media/xiexie-480.webp
+        alt:
+          zh: 小章鱼动态表情：谢谢
+          en: 'Animated octopus sticker: Thank you'
+        name:
+          zh: 谢谢
+          en: Thank you
+      - src: media/wenhao-animated-480.webp
+        poster: media/wenhao-480.webp
+        alt:
+          zh: 小章鱼动态表情：问号
+          en: 'Animated octopus sticker: Wait, what?'
+        name:
+          zh: 问号
+          en: Wait, what?
+  - template: scatter
+    text:
+      zh: 剪刀留下的奶油色毛边
+      en: the cream edge is the scissor cut
+    pieces:
+      - src: media/wuwu-animated-480.webp
+        poster: media/wuwu-480.webp
+        alt:
+          zh: 小章鱼动态表情：呜呜呜
+          en: 'Animated octopus sticker: Boo-hoo'
+        name:
+          zh: 呜呜呜
+          en: Boo-hoo
+      - src: media/heng-animated-480.webp
+        poster: media/heng-480.webp
+        alt:
+          zh: 小章鱼动态表情：哼
+          en: 'Animated octopus sticker: Hmph'
+        name:
+          zh: 哼
+          en: Hmph
+      - src: media/zhenjing-animated-480.webp
+        poster: media/zhenjing-480.webp
+        alt:
+          zh: 小章鱼动态表情：震惊
+          en: 'Animated octopus sticker: Shocked'
+        name:
+          zh: 震惊
+          en: Shocked
+      - src: media/haixiu-animated-480.webp
+        poster: media/haixiu-480.webp
+        alt:
+          zh: 小章鱼动态表情：害羞
+          en: 'Animated octopus sticker: Feeling shy'
+        name:
+          zh: 害羞
+          en: Feeling shy
+      - src: media/qiuqiu-animated-480.webp
+        poster: media/qiuqiu-480.webp
+        alt:
+          zh: 小章鱼动态表情：求求了
+          en: 'Animated octopus sticker: Pretty please'
+        name:
+          zh: 求求了
+          en: Pretty please
+      - src: media/chigua-animated-480.webp
+        poster: media/chigua-480.webp
+        alt:
+          zh: 小章鱼动态表情：吃瓜
+          en: 'Animated octopus sticker: Here for the drama'
+        name:
+          zh: 吃瓜
+          en: Here for the drama
+      - src: media/sikao-animated-480.webp
+        poster: media/sikao-480.webp
+        alt:
+          zh: 小章鱼动态表情：思考中
+          en: 'Animated octopus sticker: Thinking'
+        name:
+          zh: 思考中
+          en: Thinking
+      - src: media/manglu-animated-480.webp
+        poster: media/manglu-480.webp
+        alt:
+          zh: 小章鱼动态表情：忙碌中
+          en: 'Animated octopus sticker: Busy busy'
+        name:
+          zh: 忙碌中
+          en: Busy busy
+      - src: media/zaima-animated-480.webp
+        poster: media/zaima-480.webp
+        alt:
+          zh: 小章鱼动态表情：在吗
+          en: 'Animated octopus sticker: You there?'
+        name:
+          zh: 在吗
+          en: You there?
+      - src: media/liule-animated-480.webp
+        poster: media/liule-480.webp
+        alt:
+          zh: 小章鱼动态表情：溜了溜了
+          en: 'Animated octopus sticker: Gotta go'
+        name:
+          zh: 溜了溜了
+          en: Gotta go
+      - src: media/meidian-animated-480.webp
+        poster: media/meidian-480.webp
+        alt:
+          zh: 小章鱼动态表情：额度用完了
+          en: 'Animated octopus sticker: Out of credits'
+        name:
+          zh: 额度用完了
+          en: Out of credits
+      - src: media/wanan-animated-480.webp
+        poster: media/wanan-480.webp
+        alt:
+          zh: 小章鱼动态表情：晚安
+          en: 'Animated octopus sticker: Good night'
+        name:
+          zh: 晚安
+          en: Good night
 files:
-- path: files/stickers/
-  kind: folder
-  label:
-    zh: 24 枚高清 GIF
-    en: 24 HD GIFs
-- path: files/stickers.zip
-  kind: bundle
-  label:
-    zh: 打包下载 .zip
-    en: Download bundle .zip
+  - path: files/stickers/
+    kind: folder
+    label:
+      zh: 24 枚高清 GIF
+      en: 24 HD GIFs
+  - path: files/stickers.zip
+    kind: bundle
+    label:
+      zh: 打包下载 .zip
+      en: Download bundle .zip
