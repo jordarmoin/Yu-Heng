@@ -1,0 +1,10 @@
+---
+import {t,filesize,words} from '../lib/content';
+const {node,lang}=Astro.props;const w=words(lang);
+const ext=node.name.split('.').pop();
+const icon=node.folder?'M2 6h8l2 3h10v12H2z':ext==='mp4'?'M3 3h13v20H3z M16 10l6-4v14l-6-4':ext==='zip'?'M5 2h14v22H5z M11 3v3h3v3h-3v3h3v3h-3v5h3': 'M3 3h19v19H3z M5 19l6-7 4 4 3-5 3 8';
+---
+<li>
+ {node.folder?<details open class="file-folder"><summary><svg viewBox="0 0 26 26" aria-hidden="true"><path d={icon}/></svg><span class="file-name">{t(node.label,lang)||node.name}/</span><a href={node.github} target="_blank" rel="noreferrer" aria-label={`${w.folder}: ${node.name}`}>↗</a></summary><ul>{node.children?.map((child)=><Astro.self node={child} lang={lang}/>)}</ul></details>:
+ <div class="file-row"><svg viewBox="0 0 26 26" aria-hidden="true"><path d={icon}/></svg><span class="file-name" title={node.name}>{node.bundle?w.bundle:node.name}</span><span class="file-size">{filesize(node.size)}</span><a href={node.href} download aria-label={`${w.download}: ${node.name}`}>↓</a></div>}
+</li>

@@ -1,0 +1,10 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import {languages,works,t,route,url,words} from '../../../lib/content';
+export function getStaticPaths(){return languages.map(lang=>({params:{lang},props:{lang}}));}
+const {lang}=Astro.props;const years=[...new Set(works.map(w=>w.year))].sort((a,b)=>b-a);const w=words(lang);
+---
+<Layout lang={lang} active="index" title={w.index}>
+ <div class="index-page"><h1>{w.index}</h1>{years.map(year=><section class="year-group"><h2 class="hand">{year}</h2><ol>{works.filter(item=>item.year===year).sort((a,b)=>a.path.localeCompare(b.path)).map(item=><li style={`--depth:${item.path.split('/').length-1}`}><a class="index-row" href={route(item,lang)} data-thumb={url(item,item.cover.poster||item.cover.src)}><span class="index-title">{t(item.title,lang)}{item.type==='collection'&&' /'}</span><span class="leader"/><span class="index-medium">{t(item.medium,lang)}</span><span class="leader leader-short"/><time>{year}</time></a></li>)}</ol></section>)}</div>
+ <img class="cursor-preview" width="180" height="120" alt="" hidden/>
+</Layout>

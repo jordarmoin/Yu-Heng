@@ -1,0 +1,15 @@
+{
+  "name": "yu-heng-gallery",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/prepare.mjs && astro dev --host 127.0.0.1",
+    "build": "node scripts/prepare.mjs && astro build && node scripts/check-files.mjs dist",
+    "preview": "astro preview --host 127.0.0.1",
+    "media": ".venv/bin/python scripts/media.py",
+    "sync-tokens": "bash scripts/sync-tokens.sh",
+    "qa": "node scripts/qa.mjs"
+  },
+  "dependencies": { "astro": "7.4.12", "sharp": "^0.34.5", "yaml": "^2.8.1" },
+  "devDependencies": { "puppeteer-core": "^24.31.0", "typescript": "^5.9.3" }
+}

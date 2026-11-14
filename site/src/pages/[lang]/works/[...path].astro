@@ -1,0 +1,17 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Card from '../../../components/Card.astro';
+import Hero from '../../../components/Hero.astro';
+import Spreads from '../../../components/Spreads.astro';
+import Slip from '../../../components/Slip.astro';
+import {languages,works,t,ancestors,children,route,words} from '../../../lib/content';
+export function getStaticPaths(){return languages.flatMap(lang=>works.map(item=>({params:{lang,path:item.path},props:{lang,item}})));}
+const {lang,item}=Astro.props;const w=words(lang);
+---
+<Layout lang={lang} title={t(item.title,lang)} description={t(item.summary,lang)}>
+ <article class="work-page">
+  <nav class="breadcrumb" aria-label={lang==='zh'?'面包屑导航':'Breadcrumb'}><ol><li><a href={`/${lang}/`}>{w.gallery}</a></li>{ancestors(item).map(parent=><li><span class="ink-slash" aria-hidden="true">/</span><a href={route(parent,lang)}>{t(parent.title,lang)}</a></li>)}<li><span class="ink-slash" aria-hidden="true">/</span><span aria-current="page">{t(item.title,lang)}</span></li></ol></nav>
+  <div class="work-top"><Card item={item} lang={lang}/><Hero item={item} lang={lang}/></div>
+  {item.type==='collection'?<section class="album-grid collection-grid" aria-label={t(item.title,lang)}>{children(item.path).map((child,index)=><Slip item={child} lang={lang} index={index}/>)}</section>:<Spreads item={item} lang={lang}/>}
+ </article>
+</Layout>

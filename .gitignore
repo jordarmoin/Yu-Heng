@@ -1,0 +1,9 @@
+node_modules/
+.venv/
+.astro/
+dist/
+site/public/content/
+site/public/fonts/long-cang-subset.woff2
+site/public/fonts/caveat-subset.woff2
+.cache/
+__pycache__/

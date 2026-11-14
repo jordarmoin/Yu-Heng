@@ -1,0 +1,100 @@
+type: work
+status: published
+order: 10
+seed: 4217
+size: L
+title:
+  zh: 一点火花
+  en: A Little Spark
+medium:
+  zh: 手绘风格动画短片
+  en: hand-drawn-style animated short
+spec:
+  zh: 60 秒
+  en: 60 s
+year: 2026
+tools:
+- Python
+- Skia
+- numpy
+summary:
+  zh: 一只小章鱼，在纸上找到了一点火花。
+  en: A small octopus finds a spark on paper.
+cover:
+  src: media/poster-960.webp
+  poster: media/poster-960.webp
+  loop: media/loop.mp4
+  alt:
+    zh: 奶油色纸上的小章鱼与一点红色火花
+    en: A small octopus and a red spark on cream paper
+hero:
+  kind: video
+  src: files/a-little-spark-720p.mp4
+  poster: media/poster-1600.webp
+  alt:
+    zh: 播放六十秒动画短片《一点火花》
+    en: Play the sixty-second animated short A Little Spark
+spreads:
+- template: hero-note
+  text:
+    zh: 从一张纸、一个小小的形状开始。小克伸出触手，试着和纸外的世界打个招呼。
+    en: It starts with a sheet of paper and a small shape. Little Ke reaches out to
+      the world beyond the page.
+  pieces:
+  - src: media/story-1-960.webp
+    alt:
+      zh: 小章鱼看着一架铅笔画的纸飞机
+      en: The octopus watches a pencil-drawn paper plane
+    name:
+      zh: 一张纸，一个开始
+      en: A page, a beginning
+    note:
+      zh: 每一帧都是代码画的
+      en: every frame drawn in code
+- template: pair
+  pieces:
+  - src: media/story-2-960.webp
+    alt:
+      zh: 小克的触手托着画笔、书、音乐和其他小小工具
+      en: Little Ke holds brushes, a book, music and small tools
+    name:
+      zh: 试试这个，也试试那个
+      en: A little of this, a little of that
+    note:
+      zh: 每一帧都是代码画的
+      en: every frame drawn in code
+  - src: media/story-3-960.webp
+    alt:
+      zh: 墨蓝色夜空里，小克和一颗星星相遇
+      en: Little Ke meets a star in an ink-blue sky
+    name:
+      zh: 配乐也是算出来的
+      en: the music is computed too
+    note:
+      zh: 96 bpm
+      en: 96 bpm
+- template: text-margin
+  text:
+    zh: 火花落在纸上，慢慢长成了花。六十秒过后，小克还留在这里，等下一次出发。
+    en: The spark lands on paper and slowly grows into flowers. Sixty seconds later,
+      Little Ke is still here, waiting for the next beginning.
+  pieces:
+  - src: media/story-4-960.webp
+    alt:
+      zh: 开满小花的纸上，小克抬头看着火花
+      en: Little Ke looks up at a spark above paper flowers
+    name:
+      zh: 慢慢长出花来
+      en: Let something grow
+  - src: media/story-5-960.webp
+    alt:
+      zh: 小克坐在花丛中，短片走向结束
+      en: Little Ke sits among flowers at the end of the film
+    name:
+      zh: 一点火花，留在这里
+      en: A spark to keep
+files:
+- path: files/a-little-spark-720p.mp4
+  label:
+    zh: 一点火花 · 720p
+    en: A Little Spark · 720p

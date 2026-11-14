@@ -1,0 +1,13 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Slip from '../../components/Slip.astro';
+import {languages,children,site,t} from '../../lib/content';
+export function getStaticPaths(){return languages.map(lang=>({params:{lang},props:{lang}}));}
+const {lang}=Astro.props;
+---
+<Layout lang={lang}>
+ <div class="album-page">
+  <section class="letter"><h1 class="visually-hidden">{lang==='zh'?'育恒的画廊':"Yu Heng's Gallery"}</h1><p>{t(site.intro,lang)}</p><p class="hand signature">{t(site.signature,lang)}</p></section>
+  <section class="album-grid" aria-label={lang==='zh'?'作品':'Works'}>{children().map((item,index)=><Slip item={item} lang={lang} index={index}/>)}</section>
+ </div>
+</Layout>

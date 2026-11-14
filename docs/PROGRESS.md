@@ -1,0 +1,10 @@
+# Gallery status · 2026-11-14
+
+- A2 review polish: complete in the local source, covering readable seals/night blending, balanced intro, a text-free garden poster and offset play circle, tighter opening spread with a measured edge-to-edge arrow, stronger seeded sticker scatter with overlap/boundary constraints, and visible night tape. Build and TypeScript pass; the browser interaction/geometry matrix and 14 affected screenshots are recorded under `gallery-design/shots/A2/` with a short addition to `reports/A.md`. The lead's A2 brief overrides the corresponding original DESIGN values only. No push or deployment.
+
+- Implementation: complete local Astro gallery, following the supplied DESIGN and CONTRACT (copies alongside this file). Production has two works and nine routes. No UI framework.
+- Media: copied masters outside Git; web derivatives and downloads are in `content/works/`. The movie is 16,099,438 bytes; the 24-GIF bundle is 18,580,691 bytes. Every public file is strictly below 24,000,000 bytes. All 48 animated WebP derivatives retain full alpha and 80 ms frames.
+- Builds: default production excludes fixtures. `GALLERY_FIXTURE=1 GALLERY_OUTDIR=.cache/fixture-dist npm run build` proves nested collections in an isolated 15-route output. Default public staging is restored after fixture verification.
+- Verification: build, TypeScript, file-size boundaries, repeatable media, and Chrome checks at 1440×900 / 390×844, day/night. The JSON evidence and all requested screenshots live in `/var/lib/claude-isolated/workbench/gallery-design/shots/A/`; `reports/A.md` records final counts and limitations.
+- Release: local branch `gallery-v1` only. No push or deploy; no workbench service changes. GitHub file-tree links intentionally target `main` and become available after the owner publishes the content.
+- Limits: browser phone emulation, not a physical handset; no formal Lighthouse score or hosting deployment acceptance claimed. A clean build requires Node 22.23.4+, Python 3 and uv; the build bootstraps its own FontTools environment.

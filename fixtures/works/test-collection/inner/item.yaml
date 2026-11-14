@@ -1,0 +1,32 @@
+type: collection
+status: published
+year: 2026
+seed: 734
+size: M
+order: 90
+title:
+  zh: 里面的一叠
+  en: Pages inside
+medium:
+  zh: 测试用藏夹
+  en: test collection
+spec:
+  zh: 层叠与嵌套
+  en: stacks and nesting
+summary:
+  zh: 仅在测试构建显示。
+  en: Visible only in the test build.
+cover:
+  src: /content/works/little-ke/media/banner-960.webp
+  alt:
+    zh: 测试藏夹封面
+    en: Test collection cover
+hero:
+  kind: image
+  src: /content/works/little-ke/media/banner-960.webp
+  alt:
+    zh: 测试藏夹封面
+    en: Test collection cover
+tools: []
+spreads: []
+files: []

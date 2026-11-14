@@ -1,0 +1,11 @@
+---
+import {url,info,t} from '../lib/content';
+const {item,piece,lang,loading='lazy',sizes='(max-width: 720px) 92vw, 60vw',class:className=''}=Astro.props;
+const src=piece.poster||piece.src;const full=url(item,src);const meta=info(item,src);
+const responsive=/-\d+\.webp$/.test(full)&&!full.includes('-animated-');
+const set=(ext:string)=>[480,960,1600].map(w=>`${full.replace(/-\d+\.webp$/,`-${w}.${ext}`)} ${w}w`).join(', ');
+---
+<picture class:list={['poster',className]} style={`--lqip:${meta.dominant}`}>
+ {responsive&&<source type="image/avif" srcset={set('avif')} sizes={sizes}/>}
+ <img src={full} srcset={responsive?set('webp'):undefined} sizes={responsive?sizes:undefined} width={meta.width} height={meta.height} alt={t(piece.alt,lang)} loading={loading} decoding="async" fetchpriority={loading==='eager'?'high':undefined}/>
+</picture>

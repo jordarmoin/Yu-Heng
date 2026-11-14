@@ -1,0 +1,16 @@
+:root {
+ --font-hand:"Caveat","Long Cang",var(--font-kai);
+ --hand-zh-scale:1.18;
+ --tilt-max:1.6deg;
+ --tilt-scatter:6deg;
+ --shadow-cut:drop-shadow(0 1px 0 rgb(41 35 31 / .10)) drop-shadow(0 10px 14px rgb(41 35 31 / .14));
+ --shadow-mount:0 1px 0 rgb(41 35 31 / .08),0 14px 28px -12px rgb(41 35 31 / .28);
+ --tape-a:rgb(196 96 61 / .30);
+ --tape-b:rgb(60 90 140 / .22);
+}
+[data-theme="night"] {
+ --tape-a:rgb(196 96 61 / .30);
+ --tape-b:rgb(60 90 140 / .22);
+ --shadow-cut:drop-shadow(0 2px 1px rgb(0 0 0 / .24)) drop-shadow(0 14px 20px rgb(0 0 0 / .44));
+ --shadow-mount:0 2px 1px rgb(0 0 0 / .24),0 20px 38px -12px rgb(0 0 0 / .64);
+}

@@ -1,0 +1,15 @@
+---
+import {t,words,fileTree} from '../lib/content';
+import FileNode from './FileNode.astro';
+import Material from './Material.astro';
+const {item,lang}=Astro.props;const w=words(lang);const files=fileTree(item);
+---
+<section class="catalogue-card" aria-labelledby="work-title">
+ <Material kind="clip" seed={item.seed}/>
+ <h1 class="hand" id="work-title">{t(item.title,lang)}</h1>
+ <p class="other-title" lang={lang==='zh'?'en':'zh'}>{t(item.title,lang==='zh'?'en':'zh')}</p>
+ <dl>{[[w.year,item.year],[w.medium,t(item.medium,lang)],[w.tools,item.tools?.join(' · ')],[w.spec,t(item.spec,lang)]].map(([label,value])=><div><dt>{label}</dt><dd>{value||'—'}</dd></div>)}</dl>
+ <p class="summary">{t(item.summary,lang)}</p>
+ {files.length>0&&<details class="files"><summary><Material kind="caret" seed={item.seed}/>{w.files}</summary><ul class="file-tree">{files.map(node=><FileNode node={node} lang={lang}/>)}</ul></details>}
+ <div class="year-seal" aria-hidden="true"><Material kind="stamp" seed={item.seed}/><span>{w.stamp.slice(0,2)}<br/>{w.stamp.slice(2)}</span></div>
+</section>

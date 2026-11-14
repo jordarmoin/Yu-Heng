@@ -1,0 +1,22 @@
+---
+import {t,url,info,random} from '../lib/content';
+import Material from './Material.astro';
+import Picture from './Picture.astro';
+const {item,piece,lang,index=0,scatter=false,decoration='tape'}=Astro.props;
+const r=random(item.seed+index*177);const tilt=(r()-.5)*(scatter?12:3.2);const offset=Math.round(scatter?(r()-.5)*72:r()*36);
+const jitterX=scatter?Math.round((r()-.5)*56):0;const scale=scatter ? .9+r()*.18 : 1;
+const transparent=info(item,piece.poster||piece.src).transparent;
+const animated=piece.src.includes('-animated-');
+const full=url(item,animated?piece.src:piece.src.replace(/-\d+\.webp$/,'-1600.webp'));
+const caption=t(piece.name||piece.alt,lang);const meta=info(item,piece.poster||piece.src);
+const tapeLeft=r()>.5?38:8;
+---
+<figure class:list={['story-piece',{'scatter-piece':scatter,'transparent':transparent}]} style={`--jitter-x:${jitterX}px;--scale:${scale};--tilt:${tilt}deg;--offset:${offset}px;--counter:${-tilt}deg;--tape-turn:${(r()-.5)*16}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${r()>.5?'a':'b'})`}>
+ <button class:list={['piece-button',transparent?'cutout':'mount']} data-piece data-src={full} data-poster={url(item,piece.poster||piece.src)} data-caption={caption} data-alt={t(piece.alt,lang)} data-animated={animated?'true':undefined} aria-label={caption} style={`view-transition-name:piece-${item.path.replaceAll('/','-')}-${index}`}>
+  <Picture item={item} piece={piece} lang={lang} sizes={scatter?'(max-width:720px) 28vw, 20vw':'(max-width:720px) 90vw, 55vw'}/>
+  {animated&&<img class="animation" data-motion-src={url(item,piece.src)} data-motion-small={url(item,piece.src.replace('-480.webp','-320.webp'))} width={meta.width} height={meta.height} alt="" aria-hidden="true"/>}
+  {!transparent&&decoration==='tape'&&<Material kind="tape" seed={item.seed+index}/>}
+  {!transparent&&decoration==='corners'&&<><Material kind="corner" seed={item.seed+index} class="corner-tl"/><Material kind="corner" seed={item.seed+index+1} class="corner-br"/></>}
+ </button>
+ <figcaption class="hand">{caption}</figcaption>
+</figure>

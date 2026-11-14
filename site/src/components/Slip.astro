@@ -1,0 +1,27 @@
+---
+import {t,url,route,info,random,children,words} from '../lib/content';
+import Material from './Material.astro';
+import Picture from './Picture.astro';
+const {item,lang,index=0}=Astro.props;const r=random(item.seed);
+const tilt=(r()-.5)*3.2;const offset=Math.round(r()*40);const tapeTilt=(r()-.5)*16;const tapeColor=r()>.5?'a':'b';const corner=r()>.5;
+const tapeLeft=r()>.5?38:8;
+const transparent=info(item,item.cover.poster||item.cover.src).transparent;
+const stack=item.type==='collection';const covers=children(item.path).slice(0,2);
+const w=words(lang);const key='cover-'+item.path.replaceAll('/','-');
+---
+<article class:list={['album-piece',`size-${item.size}`,{'is-stack':stack}]} style={`--tilt:${tilt}deg;--offset:${offset}px;--delay:${index*40}ms;--counter:${-tilt}deg;--tape-turn:${tapeTilt}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${tapeColor})`}>
+ <div class="piece-body">
+  {stack&&covers.map((cover,i)=><div class:list={['stack-back',`back-${i}`]} style={`view-transition-name:cover-${cover.path.replaceAll('/','-')}`}><Picture item={cover} piece={cover.cover} lang={lang}/></div>)}
+  <a class="slip" href={route(item,lang)} aria-label={t(item.title,lang)}>
+   <div class:list={['slip-image',transparent?'cutout':'mount']} style={`view-transition-name:${key}`}>
+    <Picture item={item} piece={item.cover} lang={lang} loading={index===0?'eager':'lazy'} sizes={item.size==='L'?'(max-width:720px) 90vw, 45vw':'(max-width:720px) 90vw, 30vw'}/>
+    {item.cover.loop&&<video class="loop" data-auto-motion muted loop playsinline preload="none" poster={url(item,item.cover.poster||item.cover.src)} width={info(item,item.cover.src).width} height={info(item,item.cover.src).height}>
+     <source data-src={url(item,item.cover.loop.replace('.mp4','.webm'))} type="video/webm"/><source data-src={url(item,item.cover.loop)} type="video/mp4"/>
+    </video>}
+    {!transparent&&<><Material kind="tape" seed={item.seed}/><Material kind="corner" seed={item.seed+1} class={corner?'corner-tl':'corner-tr'}/><Material kind="corner" seed={item.seed+2} class={corner?'corner-br':'corner-bl'}/></>}
+   </div>
+   <div class="piece-caption"><h2 class="hand">{t(item.title,lang)}{stack&&` (${children(item.path).length})`}</h2><p class="meta">{item.year} · {t(item.medium,lang)}</p></div>
+  </a>
+  {item.cover.loop&&<button class="reduced-play" data-reduced-play aria-label={`${w.play} ${t(item.title,lang)}`}><Material kind="play" seed={item.seed}/></button>}
+ </div>
+</article>

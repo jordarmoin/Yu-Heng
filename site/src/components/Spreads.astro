@@ -1,0 +1,17 @@
+---
+import Piece from './Piece.astro';
+import Material from './Material.astro';
+import {t,random} from '../lib/content';
+const {item,lang}=Astro.props;let offset=0;
+---
+<div class="spreads">
+{(item.spreads||[]).map((spread,spreadIndex)=>{const start=offset;offset+=spread.pieces.length;const r=random(item.seed+spreadIndex);return <section class:list={['spread',spread.template]} id={`spread-${spreadIndex+1}`} aria-label={`${t(item.title,lang)} ${spreadIndex+1}`}>
+ {spread.template==='hero-note'&&<>
+  <Piece item={item} piece={spread.pieces[0]} lang={lang} index={start}/>
+  <div class="story-copy"><p>{t(spread.text,lang)}</p><div class="scrap" style={`--scrap-ink:${r()>.5?'var(--accent-ink)':'var(--ink-2)'}`}><Material kind="scrap" seed={item.seed+spreadIndex} class="scrap-edge"/><p class="hand">{t(spread.pieces[0].note,lang)}</p></div></div><svg class="material arrow layout-arrow" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path/></svg>
+ </>}
+ {spread.template==='pair'&&spread.pieces.map((piece,i)=><div class={`pair-item pair-${i}`}><Piece item={item} piece={piece} lang={lang} index={start+i} decoration={i===0?'tape':'corners'}/>{piece.note&&<p class="hand pair-note">{t(piece.note,lang)}</p>}</div>)}
+ {spread.template==='scatter'&&<><h2 class="hand scatter-note">{t(spread.text,lang)}</h2><div class="scatter-grid">{spread.pieces.map((piece,i)=><Piece item={item} piece={piece} lang={lang} index={start+i} scatter/>)}</div></>}
+ {spread.template==='text-margin'&&<><div class="reading"><p>{t(spread.text,lang)}</p></div>{spread.pieces.map((piece,i)=><div class={`margin-piece margin-${i}`}><Piece item={item} piece={piece} lang={lang} index={start+i}/></div>)}</>}
+</section>})}
+</div>

@@ -1,0 +1,42 @@
+---
+import {ClientRouter} from 'astro:transitions';
+import {t,site,words} from '../lib/content';
+import Material from '../components/Material.astro';
+import '../styles/gallery.css';
+const {lang='zh',title='',active='gallery',description=t(site.intro,lang)}=Astro.props;const w=words(lang);
+const current=Astro.url.pathname;const suffix=current.replace(/^\/(zh|en)/,'');
+---
+<!doctype html>
+<html lang={lang} data-theme="day">
+ <head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>{title?`${title} · ${w.brand}`:w.brand}</title><meta name="description" content={description}/>
+  <link rel="alternate" hreflang="zh" href={`/zh${suffix}`}/><link rel="alternate" hreflang="en" href={`/en${suffix}`}/><link rel="alternate" hreflang="x-default" href={`/zh${suffix}`}/>
+  <link rel="icon" type="image/svg+xml" href="/seal.svg"/>
+  <link rel="stylesheet" href="/design/css/tokens.css"/>
+  <link rel="stylesheet" href="/fonts/lxgw-wenkai/lxgwwenkai-regular.css"/>
+  <script is:inline data-astro-rerun>try{document.documentElement.dataset.theme=localStorage.getItem('gallery-theme')||'day'}catch{}</script>
+  <ClientRouter/>
+ </head>
+ <body>
+  <a class="skip" href="#main">{w.skip}</a>
+  <header class="site-header">
+   <a href={`/${lang}/`} class="wordmark"><span class="name-seal" aria-hidden="true"><span>育<br/>恒</span></span><span>{w.brand}</span></a>
+   <nav aria-label={lang==='zh'?'主导航':'Main navigation'}>
+    <div class="view-links"><a href={`/${lang}/`} aria-current={active==='gallery'?'page':undefined}>{w.gallery}{active==='gallery'&&<Material kind="underline" seed={88}/>}</a><span aria-hidden="true">·</span><a href={`/${lang}/list/`} aria-current={active==='index'?'page':undefined}>{w.index}{active==='index'&&<Material kind="underline" seed={89}/>}</a></div>
+    <div class="language-links"><a href={`/zh${suffix}`} lang="zh" hreflang="zh" aria-current={lang==='zh'?'true':undefined}>中</a><span aria-hidden="true">/</span><a href={`/en${suffix}`} lang="en" hreflang="en" aria-current={lang==='en'?'true':undefined}>EN</a></div>
+    <button class="theme-toggle" aria-label={w.theme} aria-pressed="false"><Material kind="sun" seed={12}/><Material kind="moon" seed={13}/></button>
+   </nav>
+  </header>
+  <main id="main"><slot/></main>
+  <footer>{w.footer}<span aria-hidden="true"> · </span><a href={site.links.github} target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <dialog class="lightbox" aria-label={lang==='zh'?'作品大图':'Artwork viewer'}>
+   <button class="lightbox-close" aria-label={w.close}>×</button>
+   <button class="lightbox-prev" aria-label={w.previous}>←</button>
+   <figure><img class="lightbox-image" width="1600" height="900" alt=""/><figcaption class="hand"></figcaption><p class="lightbox-count meta" aria-live="polite"></p></figure>
+   <button class="lightbox-next" aria-label={w.next}>→</button>
+   <button class="lightbox-play" aria-label={w.play} hidden><Material kind="play" seed={51}/></button>
+  </dialog>
+  <script>import '../scripts/client';</script>
+ </body>
+</html>
