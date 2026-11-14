@@ -29,3 +29,9 @@
 - Import workbench tokens verbatim and self-host OFL fonts. Subset handwriting fonts at build. Generate AVIF/WebP stills, full-alpha animated WebP directly from PNG frames at 12.5 fps, a two-pass 720p movie, album loops, 24 GIF downloads and a ZIP. Private masters remain outside the repository.
 - Verification: production and fixture static builds; TypeScript; 24 MB boundary rejection; SHA-256 media idempotence; animation alpha/frame timing; ZIP integrity; four Chrome width/theme runs (242 assertions) and 68 screenshots. Detailed evidence is in `/var/lib/claude-isolated/workbench/gallery-design/shots/A/` and the handoff report in `gallery-design/reports/A.md`.
 - No push, deployment, service or workbench source change. The local work is on `gallery-v1`. Rollback is switching to the original `main` branch; retain external masters and evidence.
+
+## C3 · 2026-11-14
+
+- Use documented preinstalled EdgeOne Node22.11.0 consistently in edgeone.json, engines.node and .nvmrc. Pin Astro5.18.2 (latest compatible major), preserve site/CSS/content byte-for-byte.
+- Build uses committed subset/full WOFF2 fonts on both server/cloud without Python, .venv, browser or server paths. Offline media/font maintenance scripts remain separate from npm run build.
+- Validation: exact Node22.11.0 clean-clone npm ci/build, engine-strict dependency check and A2 visual comparison before the single console publish.

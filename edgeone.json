@@ -2,5 +2,5 @@
   "installCommand": "npm ci --no-audit --no-fund",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "nodeVersion": "22.23.4"
+  "nodeVersion": "22.11.0"
 }

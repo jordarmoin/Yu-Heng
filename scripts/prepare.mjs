@@ -1,6 +1,5 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
 import sharp from 'sharp';
 import { createHash } from 'node:crypto';
 import { checkFiles } from './check-files.mjs';
@@ -60,13 +59,9 @@ walkContent('site/public/content');
 // Only string literals rendered by the app; avoid glyphs introduced by code identifiers.
 collect(JSON.parse(fs.readFileSync('site/src/ui.json','utf8')));
 fs.writeFileSync('.cache/font-text.json',JSON.stringify(text));
-// Publisher uses the verified Python cache; cloud builds use bundled deterministic fonts.
-const python=path.join(root,'.venv/bin/python');
-if(fs.existsSync(python)) execFileSync(python,['scripts/subset-fonts.py'],{stdio:'inherit'});
-else {
- const prebuilt=path.join(root,'scripts/fonts/prebuilt');
- const same=createHash('sha256').update(text).digest('hex')===fs.readFileSync(path.join(prebuilt,'text.sha256'),'utf8').trim();
- for(const name of ['long-cang','caveat'])fs.copyFileSync(path.join(prebuilt,`${name}-${same?'subset':'full'}.woff2`),path.join(root,`site/public/fonts/${name}-subset.woff2`));
- console.log(`Using bundled ${same?'subset':'full'} fonts (no cloud Python dependency).`);
-}
+// Fonts are generated offline and committed; every cloud/publisher build uses these same bytes.
+const prebuilt=path.join(root,'scripts/fonts/prebuilt');
+const same=createHash('sha256').update(text).digest('hex')===fs.readFileSync(path.join(prebuilt,'text.sha256'),'utf8').trim();
+for(const name of ['long-cang','caveat'])fs.copyFileSync(path.join(prebuilt,`${name}-${same?'subset':'full'}.woff2`),path.join(root,`site/public/fonts/${name}-subset.woff2`));
+console.log(`Using bundled ${same?'subset':'full'} fonts (no Python dependency).`);
 console.log(`Prepared ${Object.keys(manifest).length} media records; fixtures ${process.env.GALLERY_FIXTURE==='1'?'enabled':'excluded'}.`);
