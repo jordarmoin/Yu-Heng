@@ -39,6 +39,21 @@ function setup() {
   const stop=()=>{button.classList.remove('is-playing');const anim=button.querySelector<HTMLImageElement>('[data-motion-src]');if(anim)anim.onload=null};
   on(button,'mouseleave',stop);on(button,'blur',stop);
  });
+ // Idle life: random on-screen stickers wake up for a few seconds, a few at a time.
+ const sleepers=pieces.filter(b=>b.dataset.animated==='true'&&b.closest('.scatter-piece'));
+ if(sleepers.length){
+  const seen=new Set<HTMLButtonElement>();const awake=new Set<HTMLButtonElement>();
+  const io=new IntersectionObserver(es=>es.forEach(e=>{const b=e.target as HTMLButtonElement;e.isIntersecting?seen.add(b):seen.delete(b)}),{threshold:.5});
+  sleepers.forEach(b=>io.observe(b));
+  const tick=()=>{
+   setTimeout(tick,1200+Math.random()*1800);
+   if(reduced.matches||document.hidden||awake.size>=3)return;
+   const pool=[...seen].filter(b=>!awake.has(b)&&!b.matches(':hover,:focus'));if(!pool.length)return;
+   const b=pool[Math.floor(Math.random()*pool.length)];awake.add(b);animate(b);
+   setTimeout(()=>{awake.delete(b);if(!b.matches(':hover,:focus'))b.classList.remove('is-playing')},2600+Math.random()*2600);
+  };
+  setTimeout(tick,600);
+ }
  const dialog=document.querySelector<HTMLDialogElement>('.lightbox')!;
  const image=dialog.querySelector<HTMLImageElement>('.lightbox-image')!;
  const caption=dialog.querySelector<HTMLElement>('figcaption')!;

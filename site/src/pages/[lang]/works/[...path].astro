@@ -8,7 +8,7 @@ import {languages,works,t,ancestors,children,route,words} from '../../../lib/con
 export function getStaticPaths(){return languages.flatMap(lang=>works.map(item=>({params:{lang,path:item.path},props:{lang,item}})));}
 const {lang,item}=Astro.props;const w=words(lang);
 ---
-<Layout ogImage={`/og/${item.path.replaceAll('/','-')}.png`} lang={lang} title={t(item.title,lang)} description={t(item.summary,lang)}>
+<Layout lang={lang} title={t(item.title,lang)} description={t(item.summary,lang)}>
  <article class="work-page">
   <nav class="breadcrumb" aria-label={lang==='zh'?'面包屑导航':'Breadcrumb'}><ol><li><a href={`/${lang}/`}>{w.gallery}</a></li>{ancestors(item).map(parent=><li><span class="ink-slash" aria-hidden="true">/</span><a href={route(parent,lang)}>{t(parent.title,lang)}</a></li>)}<li><span class="ink-slash" aria-hidden="true">/</span><span aria-current="page">{t(item.title,lang)}</span></li></ol></nav>
   <div class="work-top"><Card item={item} lang={lang}/><Hero item={item} lang={lang}/></div>

@@ -1,6 +1,0 @@
----
-import NotFound from '../../components/NotFound.astro';
-export function getStaticPaths(){return ['zh','en'].map(lang=>({params:{lang}}))}
-const {lang}=Astro.params;
----
-<NotFound lang={lang}/>

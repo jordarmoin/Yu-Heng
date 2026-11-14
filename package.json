@@ -8,8 +8,7 @@
     "preview": "astro preview --host 127.0.0.1",
     "media": ".venv/bin/python scripts/media.py",
     "sync-tokens": "bash scripts/sync-tokens.sh",
-    "qa": "node scripts/qa.mjs",
-    "brand": "node scripts/render-brand.mjs"
+    "qa": "node scripts/qa.mjs"
   },
   "dependencies": {
     "astro": "5.18.2",
