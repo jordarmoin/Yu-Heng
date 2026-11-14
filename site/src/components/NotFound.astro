@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Material from './Material.astro';
+import {random} from '../lib/content';
+const {lang='zh'}=Astro.props;const tilt=(random(40417)()-.5)*3;
+---
+<Layout lang={lang} notFound title={lang==='en'?"This page hasn't been drawn yet":'这一页还没画好'}>
+ <section class="missing-page" aria-labelledby="missing-title">
+  <div class="missing-frame mount" style={`--missing-tilt:${tilt}deg;--tape-turn:-7deg;--tape-color:var(--tape-a)`} aria-hidden="true">
+   <div class="missing-mat"></div>
+   <Material kind="corner" seed={4041} class="corner-tl"/><Material kind="corner" seed={4042} class="corner-br"/>
+   <Material kind="tape" seed={40417}/>
+  </div>
+  <h1 id="missing-title" class="hand">{lang==='en'?"This page hasn't been drawn yet":'这一页还没画好'}</h1>
+  <a class="missing-back" href={`/${lang}/`}>{lang==='en'?'Back to the gallery →':'回到画廊 →'}</a>
+ </section>
+ <script is:inline data-astro-rerun>
+  // EdgeOne returns the root 404.html at the original missing URL, without a redirect.
+  (()=>{
+   const en=/^\/en(?:\/|$)/.test(location.pathname);const lang=en?'en':'zh';document.documentElement.lang=lang;
+   const line=en?"This page hasn't been drawn yet":'这一页还没画好';const brand=en?"Yu Heng's Gallery":'育恒的画廊';
+   document.title=line+' · '+brand;document.querySelector('#missing-title').textContent=line;
+   const back=document.querySelector('.missing-back');back.textContent=en?'Back to the gallery →':'回到画廊 →';back.href='/'+lang+'/';
+   const word=document.querySelector('.wordmark');word.href='/'+lang+'/';word.lastElementChild.textContent=brand;
+   const nav=document.querySelector('.site-header nav');nav.setAttribute('aria-label',en?'Main navigation':'主导航');
+   const views=document.querySelectorAll('.view-links a');views[0].firstChild.textContent=en?'Gallery':'画廊';views[0].href='/'+lang+'/';views[1].firstChild.textContent=en?'Index':'目录';views[1].href='/'+lang+'/list/';
+   const missing=location.pathname.replace(/^\/(zh|en)(?=\/|$)/,'');document.querySelectorAll('.language-links a').forEach(a=>{a.href='/'+a.lang+missing;a.setAttribute('aria-current',a.lang===lang?'true':'false')});
+   document.querySelector('.theme-toggle').setAttribute('aria-label',en?'Switch day and night':'切换昼夜');
+   document.querySelector('.skip').textContent=en?'Skip to content':'跳至内容';
+  })();
+ </script>
+ <style>
+  .missing-page{max-width:640px;margin:var(--s-10) auto;text-align:center;padding:var(--s-7) var(--s-4)}
+  .missing-frame{position:relative;width:80%;aspect-ratio:4/3;margin:0 auto var(--s-9);padding:var(--s-6);transform:rotate(var(--missing-tilt))}
+  .missing-mat{width:100%;height:100%;background:var(--well);box-shadow:inset 0 0 0 1px var(--rule)}
+  .missing-frame :global(.corner-tl){position:absolute;top:var(--s-6);left:var(--s-6);width:26px;height:26px}
+  .missing-frame :global(.corner-br){position:absolute;bottom:var(--s-6);right:var(--s-6);width:26px;height:26px;transform:rotate(180deg)}
+  h1{font-weight:400;font-size:var(--text-3xl);line-height:var(--leading-relaxed);margin:var(--s-6) 0 var(--s-4)}
+  .missing-back{display:inline-flex;align-items:center;min-height:44px;font-family:'LXGW WenKai',serif;font-size:var(--text-base);color:var(--ink-2)}
+  @media(max-width:719px){.missing-page{margin:var(--s-8) auto;padding:var(--s-7) 0}.missing-frame{width:88%;padding:var(--s-5)}h1{font-size:var(--text-2xl)}}
+ </style>
+</Layout>
