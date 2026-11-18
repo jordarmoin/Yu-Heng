@@ -27,16 +27,16 @@ const siteUrl='https://gallery.zyhzyh.me';const canonical=new URL(current,siteUr
  </head>
  <body>
   <a class="skip" href="#main">{w.skip}</a>
-  <header class="site-header">
-   <a href={`/${lang}/`} class="wordmark"><span class="name-seal" aria-hidden="true"><span>育<br/>恒</span></span><span>{w.brand}</span></a>
+  <header class="site-header"><div class="frame">
+   <a href={`/${lang}/`} class="wordmark"><img class="name-seal" src="/brand/seal-name.svg" width="60" height="100" alt=""/><span>{w.brand}</span></a>
    <nav aria-label={lang==='zh'?'主导航':'Main navigation'}>
     <div class="view-links"><a href={`/${lang}/`} aria-current={active==='gallery'?'page':undefined}>{w.gallery}{active==='gallery'&&<Material kind="underline" seed={88}/>}</a><span aria-hidden="true">·</span><a href={`/${lang}/list/`} aria-current={active==='index'?'page':undefined}>{w.index}{active==='index'&&<Material kind="underline" seed={89}/>}</a></div>
     <div class="language-links"><a href={`/zh${suffix}`} lang="zh" hreflang="zh" aria-current={lang==='zh'?'true':undefined}>中</a><span aria-hidden="true">/</span><a href={`/en${suffix}`} lang="en" hreflang="en" aria-current={lang==='en'?'true':undefined}>EN</a></div>
     <button class="theme-toggle" aria-label={w.theme} aria-pressed="false"><Material kind="sun" seed={12}/><Material kind="moon" seed={13}/></button>
    </nav>
-  </header>
+  </div></header>
   <main id="main"><slot/></main>
-  <footer>{w.footer}<span aria-hidden="true"> · </span><a href={site.links.github} target="_blank" rel="noreferrer">GitHub ↗</a></footer>
+  <footer><div class="frame"><span>{w.footer}</span><span aria-hidden="true"> · </span><a href={site.links.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></footer>
   <dialog class="lightbox" aria-label={lang==='zh'?'作品大图':'Artwork viewer'}>
    <button class="lightbox-close" aria-label={w.close}>×</button>
    <button class="lightbox-prev" aria-label={w.previous}>←</button>

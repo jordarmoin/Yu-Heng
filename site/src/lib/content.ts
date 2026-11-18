@@ -14,7 +14,7 @@ export const languages:Lang[]=['zh','en'];
 export const t=(v:Local|undefined,lang:Lang)=>v?.[lang]||v?.[lang==='zh'?'en':'zh']||'';
 export const words=(lang:Lang)=>ui[lang];
 const cwd=process.cwd().endsWith('/site')?path.resolve(process.cwd(),'..'):process.cwd();
-const publicRoot=path.join(cwd,'site/public');
+export const publicRoot=path.join(cwd,'site/public');
 export const site=parse(fs.readFileSync(path.join(publicRoot,'content/site.yaml'),'utf8'));
 export const media=JSON.parse(fs.readFileSync(path.join(cwd,'.cache/media.json'),'utf8'));
 export const url=(item:Item,src:string|undefined)=>!src?'':src.startsWith('/')?src:`/content/works/${item.path}/${src}`;

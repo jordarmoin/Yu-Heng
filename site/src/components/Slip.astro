@@ -8,11 +8,15 @@ const tapeLeft=r()>.5?38:8;
 const transparent=info(item,item.cover.poster||item.cover.src).transparent;
 const stack=item.type==='collection';const covers=children(item.path).slice(0,2);
 const w=words(lang);const key='cover-'+item.path.replaceAll('/','-');
+// A transparent cover from a set (stickers) brings two of its siblings along, tucked behind it.
+const set=(item.spreads||[]).filter(s=>s.template==='scatter').flatMap(s=>s.pieces);
+const friends=transparent&&set.length>2?[set[Math.floor(r()*set.length)],set[(Math.floor(r()*set.length)+Math.ceil(set.length/2))%set.length]]:[];
 ---
-<article class:list={['album-piece',`size-${item.size}`,{'is-stack':stack}]} style={`--tilt:${tilt}deg;--offset:${offset}px;--delay:${index*40}ms;--counter:${-tilt}deg;--tape-turn:${tapeTilt}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${tapeColor})`}>
+<article class:list={['album-piece',`size-${item.size}`,{'is-stack':stack,'has-friends':friends.length>0}]} style={`--tilt:${tilt}deg;--offset:${offset}px;--delay:${index*40}ms;--counter:${-tilt}deg;--tape-turn:${tapeTilt}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${tapeColor})`}>
  <div class="piece-body">
   {stack&&covers.map((cover,i)=><div class:list={['stack-back',`back-${i}`]} style={`view-transition-name:cover-${cover.path.replaceAll('/','-')}`}><Picture item={cover} piece={cover.cover} lang={lang}/></div>)}
   <a class="slip" href={route(item,lang)} aria-label={t(item.title,lang)}>
+   {friends.length>0&&<div class="friends" aria-hidden="true">{friends.map((f,i)=><div class={`friend friend-${i}`}><Picture item={item} piece={{...f,src:f.poster||f.src,alt:{zh:'',en:''}}} lang={lang} sizes="160px"/></div>)}</div>}
    <div class:list={['slip-image',transparent?'cutout':'mount']} style={`view-transition-name:${key}`}>
     <Picture item={item} piece={item.cover} lang={lang} loading={index===0?'eager':'lazy'} sizes={item.size==='L'?'(max-width:720px) 90vw, 45vw':'(max-width:720px) 90vw, 30vw'}/>
     {item.cover.loop&&<video class="loop" data-auto-motion muted loop playsinline preload="none" poster={url(item,item.cover.poster||item.cover.src)} width={info(item,item.cover.src).width} height={info(item,item.cover.src).height}>
@@ -20,7 +24,7 @@ const w=words(lang);const key='cover-'+item.path.replaceAll('/','-');
     </video>}
     {!transparent&&<><Material kind="tape" seed={item.seed}/><Material kind="corner" seed={item.seed+1} class={corner?'corner-tl':'corner-tr'}/><Material kind="corner" seed={item.seed+2} class={corner?'corner-br':'corner-bl'}/></>}
    </div>
-   <div class="piece-caption"><h2 class="hand">{t(item.title,lang)}{stack&&` (${children(item.path).length})`}</h2><p class="meta">{item.year} · {t(item.medium,lang)}</p></div>
+   <div class="piece-caption"><h2 class="hand">{t(item.title,lang)}{stack&&` (${children(item.path).length})`}</h2><p class="meta">{item.year} · {t(item.medium,lang)}{t(item.spec,lang)&&` · ${t(item.spec,lang)}`}</p></div>
   </a>
   {item.cover.loop&&<button class="reduced-play" data-reduced-play aria-label={`${w.play} ${t(item.title,lang)}`}><Material kind="play" seed={item.seed}/></button>}
  </div>

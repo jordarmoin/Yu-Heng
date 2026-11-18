@@ -9,8 +9,9 @@
  --tape-b:rgb(60 90 140 / .22);
 }
 [data-theme="night"] {
- --tape-a:rgb(196 96 61 / .30);
- --tape-b:rgb(60 90 140 / .22);
+ /* washi catches the lamp light: paler and a little more opaque, never a muddy smear */
+ --tape-a:rgb(232 160 128 / .34);
+ --tape-b:rgb(150 176 222 / .26);
  --shadow-cut:drop-shadow(0 2px 1px rgb(0 0 0 / .24)) drop-shadow(0 14px 20px rgb(0 0 0 / .44));
  --shadow-mount:0 2px 1px rgb(0 0 0 / .24),0 20px 38px -12px rgb(0 0 0 / .64);
 }

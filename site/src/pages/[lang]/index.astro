@@ -7,7 +7,7 @@ const {lang}=Astro.props;
 ---
 <Layout lang={lang}>
  <div class="album-page">
-  <section class="letter"><h1 class="visually-hidden">{lang==='zh'?'育恒的画廊':"Yu Heng's Gallery"}</h1><p>{t(site.intro,lang)}</p><p class="hand signature">{t(site.signature,lang)}</p></section>
+  <section class="letter"><h1 class="visually-hidden">{lang==='zh'?'育恒的画廊':"Yu Heng's Gallery"}</h1><p class="intro">{t(site.intro,lang).split(/(?<=[。.!?！？])\s*/).filter(Boolean).map(line=><span>{line}</span>)}</p><p class="signature"><span class="hand">{t(site.signature,lang)}</span><img class="signature-seal" src="/brand/seal-name.svg" width="60" height="100" alt=""/></p></section>
   <section class="album-grid" aria-label={lang==='zh'?'作品':'Works'}>{children().map((item,index)=><Slip item={item} lang={lang} index={index}/>)}</section>
  </div>
 </Layout>

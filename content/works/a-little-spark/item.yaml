@@ -60,9 +60,6 @@ spreads:
     name:
       zh: 试试这个，也试试那个
       en: A little of this, a little of that
-    note:
-      zh: 每一帧都是代码画的
-      en: every frame drawn in code
   - src: media/story-3-960.webp
     alt:
       zh: 墨蓝色夜空里，小克和一颗星星相遇

@@ -9,7 +9,7 @@ const loose=['zaoan','aini','wanan'].map((id,i)=>({src:`media/${id}-480.webp`,al
  <div class="hero-mount mount">
   {video?<div class="film-player">
    <video data-film controls hidden playsinline preload="none" poster={url(item,item.hero.poster)} width="1280" height="720" aria-label={t(item.hero.alt,lang)}><source data-src={url(item,item.hero.src)} type="video/mp4"/></video>
-   <button class="film-start" aria-label={`${w.play} ${t(item.title,lang)}`}><Picture item={item} piece={item.hero} lang={lang} loading="eager"/><span class="hero-play"><Material kind="play" seed={item.seed}/></span></button>
+   <button class="film-start" aria-label={`${w.play} ${t(item.title,lang)}`}><Picture item={item} piece={item.hero} lang={lang} loading="eager"/><span class="hero-play"><Material kind="play" seed={item.seed}/><span class="hand play-label">{w.play} · {t(item.spec,lang)}</span></span></button>
   </div>:<button class="hero-image piece-button" data-piece data-src={url(item,item.hero.src)} data-poster={url(item,item.hero.src)} data-caption={t(item.title,lang)} data-alt={t(item.hero.alt,lang)} aria-label={t(item.hero.alt,lang)}><Picture item={item} piece={item.hero} lang={lang} loading="eager"/></button>}
   <Material kind="tape" seed={item.seed}/>
  </div>
