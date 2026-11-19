@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### 2026-11-19 · Publish the polished Little Ke · Vol. 2 (Codex, requested by owner)
+
+- Refresh the album cover, sticker posters and animated previews, 20 HD GIFs, download ZIP and sharing card from the approved polish pass.
+- Pack 2 handoff 08 records the offline and live verification. Deploy a new commit restoring `b4692fedd06b58eff96515b2decbc9b206311077` to roll back the gallery assets.
+
 ### 2026-11-19 · Add Little Ke · Vol. 2 (agent: Codex, requested by: owner)
 
 - Add the bilingual catalogue card, mounted cover, two ten-piece scatter spreads, HD GIF downloads and sharing card. On desktop Vol. 2 starts at column two on the next row and the home album's row gap is 48px. Phone cards retain their single-column placement.
