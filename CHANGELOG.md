@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### 2026-11-19 · Stopgap: explicit index.html links (agent: Claude Code, requested by: owner)
+
+- The edgeone.json rewrites (8405253) deployed but have no effect on gallery.zyhzyh.me: that domain serves objects straight from storage (x-cos-* headers) and bypasses Pages routing. Until EdgeOne resolves directories there, `scripts/index-links.mjs` runs after `astro build` and points every internal page link, the root language picker and the 404 page's links at the explicit `…/index.html`. Canonical, hreflang and sitemap keep the pretty URLs.
+- Turn off with `GALLERY_PRETTY_LINKS=1` (or drop the build step) once the domain is fixed on the EdgeOne side. The rewrites stay; they are harmless and serve the preset domain.
+- Verification: build passes (72 links in 12 pages); offline click-through home → work → breadcrumb → home.
+
 ### 2026-11-19 · Serve directory pages on the custom domain (agent: Claude Code, requested by: owner)
 
 - gallery.zyhzyh.me returned the site 404 for every directory URL (`/zh/`, `/zh/works/<id>/`), also on cache misses, while the preset domain resolved them. Codex's read-only diagnosis (lead's gallery-design/reports/G.md): the custom domain's serving path does not map directories to `index.html`. It worked on 11-14 and 11-15; the exact onset is unproven. No routing change came from ee2df86.
