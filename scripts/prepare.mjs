@@ -3,6 +3,7 @@ import path from 'node:path';
 import sharp from 'sharp';
 import { createHash } from 'node:crypto';
 import { checkFiles } from './check-files.mjs';
+import { syncRoutes } from './routes.mjs';
 const root = process.cwd();
 checkFiles('content');
 fs.mkdirSync('.cache', {recursive:true});
@@ -65,3 +66,4 @@ const same=createHash('sha256').update(text).digest('hex')===fs.readFileSync(pat
 for(const name of ['long-cang','caveat'])fs.copyFileSync(path.join(prebuilt,`${name}-${same?'subset':'full'}.woff2`),path.join(root,`site/public/fonts/${name}-subset.woff2`));
 console.log(`Using bundled ${same?'subset':'full'} fonts (no Python dependency).`);
 console.log(`Prepared ${Object.keys(manifest).length} media records; fixtures ${process.env.GALLERY_FIXTURE==='1'?'enabled':'excluded'}.`);
+const routes=syncRoutes(root);console.log(`edgeone.json: ${routes.count} directory rewrites${routes.changed?' (updated: commit edgeone.json so the custom domain serves new pages)':''}.`);

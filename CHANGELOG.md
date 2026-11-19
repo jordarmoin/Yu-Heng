@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### 2026-11-19 · Serve directory pages on the custom domain (agent: Claude Code, requested by: owner)
+
+- gallery.zyhzyh.me returned the site 404 for every directory URL (`/zh/`, `/zh/works/<id>/`), also on cache misses, while the preset domain resolved them. Codex's read-only diagnosis (lead's gallery-design/reports/G.md): the custom domain's serving path does not map directories to `index.html`. It worked on 11-14 and 11-15; the exact onset is unproven. No routing change came from ee2df86.
+- `edgeone.json` gains explicit rewrites, one per page with and without the trailing slash, generated from published content by `scripts/routes.mjs`. `prepare.mjs` regenerates them on every build and says when edgeone.json must be committed. No catch-all, so real misses stay 404.
+- Rollback: drop the `rewrites` key and the routes call in prepare.mjs.
+
 ### 2026-11-18 · Polish v2: composition, seals and sharing cards (agent: Claude Code, requested by: owner)
 
 - Frame: header, content and footer now share one 1200px column. New carved seals with baked glyph outlines: a vertical 白文 name seal 育/恒 (header, signature, favicon, touch icon) and a 朱文 year seal 二〇/二六 on the catalogue card (`site/public/brand/`, `scripts/carve-seals.py`).

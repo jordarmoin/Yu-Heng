@@ -2,5 +2,71 @@
   "installCommand": "npm ci --no-audit --no-fund",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "nodeVersion": "22.11.0"
+  "nodeVersion": "22.11.0",
+  "rewrites": [
+    {
+      "source": "/zh",
+      "destination": "/zh/index.html"
+    },
+    {
+      "source": "/zh/",
+      "destination": "/zh/index.html"
+    },
+    {
+      "source": "/zh/list",
+      "destination": "/zh/list/index.html"
+    },
+    {
+      "source": "/zh/list/",
+      "destination": "/zh/list/index.html"
+    },
+    {
+      "source": "/zh/works/a-little-spark",
+      "destination": "/zh/works/a-little-spark/index.html"
+    },
+    {
+      "source": "/zh/works/a-little-spark/",
+      "destination": "/zh/works/a-little-spark/index.html"
+    },
+    {
+      "source": "/zh/works/little-ke",
+      "destination": "/zh/works/little-ke/index.html"
+    },
+    {
+      "source": "/zh/works/little-ke/",
+      "destination": "/zh/works/little-ke/index.html"
+    },
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/en/",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/en/list",
+      "destination": "/en/list/index.html"
+    },
+    {
+      "source": "/en/list/",
+      "destination": "/en/list/index.html"
+    },
+    {
+      "source": "/en/works/a-little-spark",
+      "destination": "/en/works/a-little-spark/index.html"
+    },
+    {
+      "source": "/en/works/a-little-spark/",
+      "destination": "/en/works/a-little-spark/index.html"
+    },
+    {
+      "source": "/en/works/little-ke",
+      "destination": "/en/works/little-ke/index.html"
+    },
+    {
+      "source": "/en/works/little-ke/",
+      "destination": "/en/works/little-ke/index.html"
+    }
+  ]
 }
