@@ -37,6 +37,14 @@
       "destination": "/zh/works/little-ke/index.html"
     },
     {
+      "source": "/zh/works/little-ke-2",
+      "destination": "/zh/works/little-ke-2/index.html"
+    },
+    {
+      "source": "/zh/works/little-ke-2/",
+      "destination": "/zh/works/little-ke-2/index.html"
+    },
+    {
       "source": "/en",
       "destination": "/en/index.html"
     },
@@ -67,6 +75,14 @@
     {
       "source": "/en/works/little-ke/",
       "destination": "/en/works/little-ke/index.html"
+    },
+    {
+      "source": "/en/works/little-ke-2",
+      "destination": "/en/works/little-ke-2/index.html"
+    },
+    {
+      "source": "/en/works/little-ke-2/",
+      "destination": "/en/works/little-ke-2/index.html"
     }
   ]
 }

@@ -3,9 +3,15 @@ import Picture from './Picture.astro';
 import Material from './Material.astro';
 import {t,url,info,words} from '../lib/content';
 const {item,lang}=Astro.props;const video=item.hero.kind==='video';const w=words(lang);
-const loose=['zaoan','aini','wanan'].map((id,i)=>({src:`media/${id}-480.webp`,alt:{zh:['早安的小克','爱你的小克','晚安的小克'][i],en:['Little Ke says good morning','Little Ke sends love','Little Ke says good night'][i]}}));
+const firstPackLoose=['zaoan','aini','wanan'].map((id,i)=>({src:`media/${id}-480.webp`,alt:{zh:['早安的小克','爱你的小克','晚安的小克'][i],en:['Little Ke says good morning','Little Ke sends love','Little Ke says good night'][i]}}));
+const volTwoPosters=['qidai','dianzan','bixin'].map(id=>`media/${id}-480.webp`);
+const loose = item.path==='little-ke' ? firstPackLoose : item.path==='little-ke-2'
+  ? item.spreads.flatMap(spread=>spread.pieces)
+      .filter(piece=>volTwoPosters.includes(piece.poster))
+      .map(piece=>({src:piece.poster,alt:piece.alt}))
+  : [];
 ---
-<div class:list={['hero-piece',{'sticker-hero':item.path==='little-ke'}]} style={`--tape-turn:-6deg;--tape-color:var(--tape-a);view-transition-name:cover-${item.path.replaceAll('/','-')}`}>
+<div class:list={['hero-piece',{'sticker-hero':loose.length>0}]} style={`--tape-turn:-6deg;--tape-color:var(--tape-a);view-transition-name:cover-${item.path.replaceAll('/','-')}`}>
  <div class="hero-mount mount">
   {video?<div class="film-player">
    <video data-film controls hidden playsinline preload="none" poster={url(item,item.hero.poster)} width="1280" height="720" aria-label={t(item.hero.alt,lang)}><source data-src={url(item,item.hero.src)} type="video/mp4"/></video>
@@ -13,5 +19,5 @@ const loose=['zaoan','aini','wanan'].map((id,i)=>({src:`media/${id}-480.webp`,al
   </div>:<button class="hero-image piece-button" data-piece data-src={url(item,item.hero.src)} data-poster={url(item,item.hero.src)} data-caption={t(item.title,lang)} data-alt={t(item.hero.alt,lang)} aria-label={t(item.hero.alt,lang)}><Picture item={item} piece={item.hero} lang={lang} loading="eager"/></button>}
   <Material kind="tape" seed={item.seed}/>
  </div>
- {item.path==='little-ke'&&loose.map((piece,i)=><div class={`loose-sticker loose-${i}`} style={`--tape-turn:${i*7-6}deg;--tape-color:var(--tape-${i%2?'a':'b'})`}><Picture item={item} piece={piece} lang={lang} sizes="150px"/><Material kind="tape" seed={item.seed+i+1}/></div>)}
+ {loose.map((piece,i)=><div class={`loose-sticker loose-${i}`} style={`--tape-turn:${i*7-6}deg;--tape-color:var(--tape-${i%2?'a':'b'})`}><Picture item={item} piece={piece} lang={lang} sizes="150px"/><Material kind="tape" seed={item.seed+i+1}/></div>)}
 </div>

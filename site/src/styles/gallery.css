@@ -147,6 +147,7 @@ body.has-settled .album-piece { animation: none; }
 }
 .catalogue-card .clip { position: absolute; width: 36px; height: 58px; top: -26px; left: 22px; transform: rotate(-11deg); color: var(--ink-3); }
 .catalogue-card h1 { --hand-size: calc(var(--text-4xl) * 1.1); font-size: calc(var(--text-4xl) * 1.1); color: var(--ink); line-height: 1.1; }
+.catalogue-card h1 span { white-space: nowrap; }
 .other-title { font-size: var(--text-sm); color: var(--ink-3); margin: var(--s-2) 0 var(--s-7); letter-spacing: .03em; }
 .catalogue-card dl { margin: 0; display: grid; gap: var(--s-3); }
 .catalogue-card dl > div { display: grid; grid-template-columns: 4.2em minmax(0, 1fr); gap: var(--s-4); align-items: baseline; }
@@ -292,6 +293,8 @@ html:has(.lightbox[open]) { overflow: hidden; }
 
 /* ---- medium screens ---------------------------------------------------------------- */
 @media (min-width: 720px) {
+  .album-page .album-grid { row-gap: calc(var(--s-10) * 2 / 3); }
+  .album-page .album-piece[data-work="little-ke-2"] { grid-column: 2 / span 4; }
   .album-grid .size-M .cutout { max-width: 360px; margin-inline: auto; }
   .album-grid .size-M .cutout .poster { aspect-ratio: 1; }
   .album-grid .size-M .cutout img { height: 100%; object-fit: contain; }

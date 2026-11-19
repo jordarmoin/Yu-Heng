@@ -4,11 +4,14 @@ import {t,words,fileTree,publicRoot} from '../lib/content';
 import FileNode from './FileNode.astro';
 import Material from './Material.astro';
 const {item,lang}=Astro.props;const w=words(lang);const files=fileTree(item);
+const title=t(item.title,lang);
+const editionBreak=title.lastIndexOf(' · ');
+const splitEdition=item.path==='little-ke-2'&&lang==='zh'&&editionBreak>=0;
 const seal=`/brand/seal-year-${item.year}.svg`;const hasSeal=fs.existsSync(publicRoot+seal);
 ---
 <section class="catalogue-card" aria-labelledby="work-title">
  <Material kind="clip" seed={item.seed}/>
- <h1 class="hand" id="work-title">{t(item.title,lang)}</h1>
+ <h1 class="hand" id="work-title">{editionBreak<0 ? title : <><span>{title.slice(0,editionBreak+(splitEdition?0:2))}</span>{splitEdition?<br/>:' '}<span>{title.slice(editionBreak+3)}</span></>}</h1>
  <p class="other-title" lang={lang==='zh'?'en':'zh'}>{t(item.title,lang==='zh'?'en':'zh')}</p>
  <dl>{[[w.year,item.year],[w.medium,t(item.medium,lang)],[w.tools,item.tools?.join(' · ')],[w.spec,t(item.spec,lang)]].map(([label,value])=><div><dt>{label}</dt><dd>{value||'—'}</dd></div>)}</dl>
  <p class="summary">{t(item.summary,lang)}</p>

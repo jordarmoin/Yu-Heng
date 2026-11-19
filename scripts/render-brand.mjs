@@ -53,8 +53,11 @@ const card = (w) => {
       <div class="rule"></div><p class="brand">gallery.zyhzyh.me</p>
       ${film ? print(media(film, big(film.cover.poster || film.cover.src)), 'p-home') : ''}${set ? cutout(media(set, big(set.cover.src)), 'c-home') : ''}`;
   }
+  const stickers = friends(w);
+  // Vol. 2 already uses its first sticker as the Hero pose.
+  const firstFriend = w.id === 'little-ke-2' ? stickers[1] : stickers[0];
   const art = transparent(w)
-    ? cutout(media(w, big(friends(w)[0])), 'c-f0') + cutout(media(w, big(friends(w)[friends(w).length - 1])), 'c-f1') + cutout(media(w, big(w.cover.src)), 'c-main')
+    ? cutout(media(w, big(firstFriend)), 'c-f0') + cutout(media(w, big(stickers.at(-1))), 'c-f1') + cutout(media(w, big(w.cover.src)), 'c-main')
     : print(media(w, big(w.hero.poster || w.cover.src)), 'p-film');
   return `<div class="copy"><div class="title"><h1>${esc(w.title.zh)}</h1></div><p class="english">${esc(w.title.en)}</p><p class="line">${esc(w.summary.zh)}</p></div>
     <div class="rule"></div><p class="brand">育恒的画廊 · Yu Heng's Gallery</p>${art}`;
@@ -82,6 +85,15 @@ try {
       await document.fonts.ready;
       if (![...document.fonts].some(f => f.family === 'Caveat' && f.status === 'loaded')) throw Error('Hand fonts not loaded');
       await Promise.all([...document.images].map(i => i.decode()));
+    });
+    if (w) await page.evaluate(() => {
+      const title = document.querySelector('h1');
+      const available = title.parentElement.clientWidth;
+      const width = title.getBoundingClientRect().width;
+      if (width > available) {
+        const fontSize = parseFloat(getComputedStyle(title).fontSize);
+        title.style.fontSize = `${fontSize * (available - 2) / width}px`;
+      }
     });
     await page.screenshot({ path: path.join(pub, 'og', name + '.png') });
     await page.close(); console.log('Rendered', name, '1200x630');

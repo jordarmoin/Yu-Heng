@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+### 2026-11-19 · Add Little Ke · Vol. 2 (agent: Codex, requested by: owner)
+
+- Add the bilingual catalogue card, mounted cover, two ten-piece scatter spreads, HD GIF downloads and sharing card. On desktop Vol. 2 starts at column two on the next row and the home album's row gap is 48px. Phone cards retain their single-column placement.
+- Rebuild the handwriting font subsets and generate both language routes. Set the Chinese catalogue heading on two lines and keep the original title in the page metadata and gallery listings.
+- Build and browser verification are recorded in Pack 2 handoff 07. Restore the previous main tree through the normal gallery publish flow to roll back.
+
 ### 2026-11-19 · Stopgap: explicit index.html links (agent: Claude Code, requested by: owner)
 
 - The edgeone.json rewrites (8405253) deployed but have no effect on gallery.zyhzyh.me: that domain serves objects straight from storage (x-cos-* headers) and bypasses Pages routing. Until EdgeOne resolves directories there, `scripts/index-links.mjs` runs after `astro build` and points every internal page link, the root language picker and the 404 page's links at the explicit `…/index.html`. Canonical, hreflang and sitemap keep the pretty URLs.

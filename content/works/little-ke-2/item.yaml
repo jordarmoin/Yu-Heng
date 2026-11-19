@@ -1,0 +1,215 @@
+type: work
+status: published
+order: 30
+seed: 8622
+size: M
+title:
+  zh: 章鱼小克 · 第二辑
+  en: Little Ke · Vol. 2
+medium:
+  zh: 动态表情
+  en: animated stickers
+spec:
+  zh: 20 枚
+  en: "20"
+year: 2026
+tools:
+  - Python
+  - Skia
+  - numpy
+summary:
+  zh: 这一辑不说话，用身体说：脸色、手臂，和一点点墨。
+  en: No words this time. Ke says it with colour, arms and a little ink.
+cover:
+  src: media/cover-960.webp
+  alt:
+    zh: 章鱼小克躲进纸色里的「尴尬」表情
+    en: Little Ke camouflages into the paper in the Awkward sticker
+hero:
+  kind: image
+  src: media/cover-1600.webp
+  alt:
+    zh: 章鱼小克第二辑封面，尴尬的小克变成纸的颜色
+    en: Little Ke Vol. 2 cover, with an awkward Little Ke turning the colour of paper
+spreads:
+  - template: scatter
+    text:
+      zh: 会变色的才是章鱼
+      en: only an octopus changes colour
+    pieces:
+      - src: media/gangga-animated-480.webp
+        poster: media/gangga-480.webp
+        alt:
+          zh: 小章鱼动态表情：尴尬
+          en: "Animated octopus sticker: Awkward"
+        name:
+          zh: 尴尬
+          en: Awkward
+      - src: media/qidai-animated-480.webp
+        poster: media/qidai-480.webp
+        alt:
+          zh: 小章鱼动态表情：期待
+          en: "Animated octopus sticker: Can’t wait"
+        name:
+          zh: 期待
+          en: Can’t wait
+      - src: media/yidu-animated-480.webp
+        poster: media/yidu-480.webp
+        alt:
+          zh: 小章鱼动态表情：已读
+          en: "Animated octopus sticker: Already read"
+        name:
+          zh: 已读
+          en: Already read
+      - src: media/weiqu-animated-480.webp
+        poster: media/weiqu-480.webp
+        alt:
+          zh: 小章鱼动态表情：委屈
+          en: "Animated octopus sticker: Feeling hurt"
+        name:
+          zh: 委屈
+          en: Feeling hurt
+      - src: media/yun-animated-480.webp
+        poster: media/yun-480.webp
+        alt:
+          zh: 小章鱼动态表情：晕了
+          en: "Animated octopus sticker: Dizzy"
+        name:
+          zh: 晕了
+          en: Dizzy
+      - src: media/emo-animated-480.webp
+        poster: media/emo-480.webp
+        alt:
+          zh: 小章鱼动态表情：emo中
+          en: "Animated octopus sticker: Feeling down"
+        name:
+          zh: emo中
+          en: Feeling down
+      - src: media/fadai-animated-480.webp
+        poster: media/fadai-480.webp
+        alt:
+          zh: 小章鱼动态表情：发呆
+          en: "Animated octopus sticker: Zoning out"
+        name:
+          zh: 发呆
+          en: Zoning out
+      - src: media/touxiao-animated-480.webp
+        poster: media/touxiao-480.webp
+        alt:
+          zh: 小章鱼动态表情：偷笑
+          en: "Animated octopus sticker: Quiet giggle"
+        name:
+          zh: 偷笑
+          en: Quiet giggle
+      - src: media/tanshou-animated-480.webp
+        poster: media/tanshou-480.webp
+        alt:
+          zh: 小章鱼动态表情：无奈
+          en: "Animated octopus sticker: A shrug"
+        name:
+          zh: 无奈
+          en: A shrug
+      - src: media/guzhang-animated-480.webp
+        poster: media/guzhang-480.webp
+        alt:
+          zh: 小章鱼动态表情：鼓掌
+          en: "Animated octopus sticker: Applause"
+        name:
+          zh: 鼓掌
+          en: Applause
+  - template: scatter
+    text:
+      zh: 八条手臂，一个表情
+      en: eight arms, one feeling
+    pieces:
+      - src: media/dianzan-animated-480.webp
+        poster: media/dianzan-480.webp
+        alt:
+          zh: 小章鱼动态表情：点赞
+          en: "Animated octopus sticker: Thumbs up"
+        name:
+          zh: 点赞
+          en: Thumbs up
+      - src: media/baozha-animated-480.webp
+        poster: media/baozha-480.webp
+        alt:
+          zh: 小章鱼动态表情：气炸了
+          en: "Animated octopus sticker: About to burst"
+        name:
+          zh: 气炸了
+          en: About to burst
+      - src: media/kun-animated-480.webp
+        poster: media/kun-480.webp
+        alt:
+          zh: 小章鱼动态表情：困
+          en: "Animated octopus sticker: Sleepy"
+        name:
+          zh: 困
+          en: Sleepy
+      - src: media/e-animated-480.webp
+        poster: media/e-480.webp
+        alt:
+          zh: 小章鱼动态表情：饿了
+          en: "Animated octopus sticker: Hungry"
+        name:
+          zh: 饿了
+          en: Hungry
+      - src: media/leng-animated-480.webp
+        poster: media/leng-480.webp
+        alt:
+          zh: 小章鱼动态表情：好冷
+          en: "Animated octopus sticker: Cold"
+        name:
+          zh: 好冷
+          en: Cold
+      - src: media/re-animated-480.webp
+        poster: media/re-480.webp
+        alt:
+          zh: 小章鱼动态表情：好热
+          en: "Animated octopus sticker: So hot"
+        name:
+          zh: 好热
+          en: So hot
+      - src: media/deyi-animated-480.webp
+        poster: media/deyi-480.webp
+        alt:
+          zh: 小章鱼动态表情：得意
+          en: "Animated octopus sticker: Feeling smug"
+        name:
+          zh: 得意
+          en: Feeling smug
+      - src: media/haipa-animated-480.webp
+        poster: media/haipa-480.webp
+        alt:
+          zh: 小章鱼动态表情：害怕
+          en: "Animated octopus sticker: Scared"
+        name:
+          zh: 害怕
+          en: Scared
+      - src: media/dacall-animated-480.webp
+        poster: media/dacall-480.webp
+        alt:
+          zh: 小章鱼动态表情：打call
+          en: "Animated octopus sticker: Cheering you on"
+        name:
+          zh: 打call
+          en: Cheering you on
+      - src: media/bixin-animated-480.webp
+        poster: media/bixin-480.webp
+        alt:
+          zh: 小章鱼动态表情：比心
+          en: "Animated octopus sticker: Sending a heart"
+        name:
+          zh: 比心
+          en: Sending a heart
+files:
+  - path: files/stickers/
+    kind: folder
+    label:
+      zh: 20 枚高清 GIF
+      en: 20 HD GIFs
+  - path: files/stickers.zip
+    kind: bundle
+    label:
+      zh: 打包下载 .zip
+      en: Download bundle .zip

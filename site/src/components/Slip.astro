@@ -12,7 +12,7 @@ const w=words(lang);const key='cover-'+item.path.replaceAll('/','-');
 const set=(item.spreads||[]).filter(s=>s.template==='scatter').flatMap(s=>s.pieces);
 const friends=transparent&&set.length>2?[set[Math.floor(r()*set.length)],set[(Math.floor(r()*set.length)+Math.ceil(set.length/2))%set.length]]:[];
 ---
-<article class:list={['album-piece',`size-${item.size}`,{'is-stack':stack,'has-friends':friends.length>0}]} style={`--tilt:${tilt}deg;--offset:${offset}px;--delay:${index*40}ms;--counter:${-tilt}deg;--tape-turn:${tapeTilt}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${tapeColor})`}>
+<article class:list={['album-piece',`size-${item.size}`,{'is-stack':stack,'has-friends':friends.length>0}]} data-work={item.path} style={`--tilt:${tilt}deg;--offset:${offset}px;--delay:${index*40}ms;--counter:${-tilt}deg;--tape-turn:${tapeTilt}deg;--tape-left:${tapeLeft}%;--tape-color:var(--tape-${tapeColor})`}>
  <div class="piece-body">
   {stack&&covers.map((cover,i)=><div class:list={['stack-back',`back-${i}`]} style={`view-transition-name:cover-${cover.path.replaceAll('/','-')}`}><Picture item={cover} piece={cover.cover} lang={lang}/></div>)}
   <a class="slip" href={route(item,lang)} aria-label={t(item.title,lang)}>
