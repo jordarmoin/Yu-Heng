@@ -1,0 +1,62 @@
+type: work
+status: published
+order: 40
+seed: 5260
+size: L
+accent: "#c4603d"
+title: {zh: 小克, en: Xiao Ke}
+medium: {zh: 角色素材库 · 可操控的卡通小章鱼, en: character library · a directable cartoon octopus}
+spec: {zh: 59 个动作 · 20 种心情 · 16 件道具 · 21 种特效, en: 59 actions · 20 moods · 16 props · 21 effects}
+year: 2026
+tools: [JavaScript, Canvas2D, Node]
+summary:
+  zh: 小克是住在我们服务器里的小章鱼。好奇、认真，有点笨手笨脚——手臂总想自己做主。他从不开口，想说的话都写在气泡里。打开游乐场，让他演给你看。
+  en: "Xiao Ke is a small octopus who lives inside our server: curious, earnest, a little clumsy because his arms half-think for themselves. He never speaks; his words arrive in bubbles. Open the playground and direct him yourself."
+link:
+  href: /xiaoke/index.html
+  label: {zh: 打开游乐场, en: Open the playground}
+cover:
+  src: media/cover-960.webp
+  poster: media/cover-960.webp
+  loop: media/loop.mp4
+  alt: {zh: 开心的小克, en: Xiao Ke in a happy mood}
+hero:
+  kind: image
+  src: media/cover-1600.webp
+  alt: {zh: 开心的小克, en: Xiao Ke in a happy mood}
+spreads:
+  - template: hero-note
+    text: {zh: 同一个小克，二十种心情。, en: One Xiao Ke in twenty moods.}
+    pieces:
+      - src: media/moods-960.webp
+        alt: {zh: 小克的二十种心情定格, en: A grid of all twenty Xiao Ke mood stills}
+        name: {zh: 心情, en: Moods}
+        note: {zh: 脸色随心情变。, en: His colour changes with his mood.}
+  - template: pair
+    pieces:
+      - src: media/camouflage-960.webp
+        alt: {zh: 小克融入纸色的连续画面, en: Frames of Xiao Ke blending into the colour of paper}
+        name: {zh: 拟态, en: Camouflage}
+      - src: media/ink-teleport-960.webp
+        alt: {zh: 小克借墨团消失又出现的连续画面, en: Frames of Xiao Ke disappearing and reappearing in clouds of ink}
+        name: {zh: 墨团传送, en: Ink teleport}
+  - template: scatter
+    text: {zh: 小克的道具, en: Xiao Ke’s props}
+    pieces:
+      - src: media/prop-pointer-480.webp
+        alt: {zh: 教鞭, en: Pointer}
+      - src: media/prop-magnifier-480.webp
+        alt: {zh: 放大镜, en: Magnifier}
+      - src: media/prop-laptop-480.webp
+        alt: {zh: 笔记本电脑, en: Laptop}
+      - src: media/prop-server-brain-480.webp
+        alt: {zh: 大脑服务器, en: Brain server}
+      - src: media/prop-packet-480.webp
+        alt: {zh: 数据包, en: Data packet}
+      - src: media/prop-bulb-480.webp
+        alt: {zh: 灯泡, en: Light bulb}
+  - template: text-margin
+    text:
+      zh: 章鱼三分之二的神经元长在手臂里。小克也一样：一个大脑，八条各有主意的手臂——就像这台服务器。
+      en: "Two thirds of an octopus's neurons live in its arms. Xiao Ke is the same: one brain, eight arms with minds of their own — like this server."
+    pieces: []

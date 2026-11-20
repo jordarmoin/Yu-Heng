@@ -2,6 +2,13 @@
 
 ## [Unreleased]
 
+
+### 2026-11-20 · Publish the Xiao Ke character library (Codex, requested by owner)
+
+- Add the bilingual work page and interactive playground, with 190 key PNG and VP9-alpha WebM downloads for 59 actions, 20 moods, 16 props and 21 effects.
+- Add the playground's directory rewrites and the work card's link. ProRes, numbered PNG sequences and the complete library archive are available through the project handoff.
+- Restore the previous main tree in a new gallery publish to roll back. See Xiao Ke handoff 02 for release verification.
+
 ### 2026-11-19 · Publish the polished Little Ke · Vol. 2 (Codex, requested by owner)
 
 - Refresh the album cover, sticker posters and animated previews, 20 HD GIFs, download ZIP and sharing card from the approved polish pass.

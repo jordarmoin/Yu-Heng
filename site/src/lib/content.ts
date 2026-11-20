@@ -8,6 +8,7 @@ export interface Piece {src:string;poster?:string;loop?:string;alt:Local;name?:L
 export interface Item {
   path:string; parent:string; dir:string; type:'work'|'collection';status:string;order:number;seed:number;size:'L'|'M'|'S';
   title:Local;medium:Local;spec:Local;summary:Local;year:number;tools:string[];cover:Piece;hero:Piece;
+  link?:{href:string;label:Local};
   spreads:{template:string;text?:Local;pieces:Piece[]}[];files:{path:string;kind?:string;label?:Local}[];
 }
 export const languages:Lang[]=['zh','en'];

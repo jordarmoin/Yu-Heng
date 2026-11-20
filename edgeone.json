@@ -45,6 +45,14 @@
       "destination": "/zh/works/little-ke-2/index.html"
     },
     {
+      "source": "/zh/works/xiaoke",
+      "destination": "/zh/works/xiaoke/index.html"
+    },
+    {
+      "source": "/zh/works/xiaoke/",
+      "destination": "/zh/works/xiaoke/index.html"
+    },
+    {
       "source": "/en",
       "destination": "/en/index.html"
     },
@@ -83,6 +91,22 @@
     {
       "source": "/en/works/little-ke-2/",
       "destination": "/en/works/little-ke-2/index.html"
+    },
+    {
+      "source": "/en/works/xiaoke",
+      "destination": "/en/works/xiaoke/index.html"
+    },
+    {
+      "source": "/en/works/xiaoke/",
+      "destination": "/en/works/xiaoke/index.html"
+    },
+    {
+      "source": "/xiaoke",
+      "destination": "/xiaoke/index.html"
+    },
+    {
+      "source": "/xiaoke/",
+      "destination": "/xiaoke/index.html"
     }
   ]
 }

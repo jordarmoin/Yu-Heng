@@ -1,0 +1,61 @@
+@font-face{font-family:Rounded;src:url(../assets/fonts/ResourceHanRoundedCN-Medium.woff2);font-weight:500;font-display:swap}
+@font-face{font-family:"Resource Han Rounded SC";src:url(../assets/fonts/ResourceHanRoundedCN-Medium.woff2);font-weight:500;font-display:swap}
+@font-face{font-family:"Resource Han Rounded SC";src:url(../assets/fonts/ResourceHanRoundedCN-Bold.woff2);font-weight:700;font-display:swap}
+:root{color-scheme:light;--paper:#f6f0e5;--sheet:#fbf8f2;--ink:#29231f;--accent:#c4603d;--nightPaper:#1c1f2c;--nightSheet:#23273a;--rule:color-mix(in srgb,var(--ink) 16%,transparent);--quiet:color-mix(in srgb,var(--ink) 72%,var(--paper))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:500 15px Rounded,system-ui,sans-serif}
+a{color:inherit;text-underline-offset:4px}
+button,input,select{font:inherit;color:inherit}
+button,select{background:var(--sheet);border:1px solid var(--rule);border-radius:5px;padding:6px 10px}
+button{cursor:pointer}
+button:hover,button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--sheet)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.masthead{display:flex;justify-content:space-between;align-items:center;padding:17px clamp(20px,5vw,74px);border-bottom:1px solid var(--rule);background:var(--sheet)}
+.wordmark{font-size:18px;letter-spacing:.08em}
+.wordmark span{color:var(--accent);font-size:13px;vertical-align:2px;margin-right:5px}
+main{width:min(1292px,calc(100% - 2 * clamp(16px,5vw,74px)));margin:auto}
+.intro{margin:29px 0 24px}
+h1,h2,p{margin:0}
+h1{font-size:clamp(35px,5vw,63px);font-weight:500;letter-spacing:-.055em;line-height:1.15}
+.intro p{color:var(--quiet);margin-top:12px}
+.workbench{display:grid;grid-template-columns:minmax(0,1.75fr) minmax(300px,1fr);gap:18px;align-items:start}
+.player,.controls{border:1px solid var(--rule);background:var(--sheet);border-radius:10px;overflow:hidden}
+.stage{height:clamp(392px,38vw,560px);position:relative;background:var(--paper);background-image:radial-gradient(var(--rule) .65px,transparent .65px);background-size:19px 19px}
+.stage[data-background="slide"]{background:#fff}
+.stage[data-background="night"]{background:var(--nightPaper)}
+.stage[data-background="code"]{background:repeating-linear-gradient(var(--nightSheet) 0 27px,var(--nightPaper) 27px 28px)}
+canvas{display:block;width:100%;height:100%;cursor:crosshair;touch-action:manipulation}
+.stage-tools,form{display:flex;align-items:center;gap:13px;padding:12px 14px;border-top:1px solid var(--rule);flex-wrap:wrap}
+.stage-tools label{display:flex;align-items:center;gap:7px;white-space:nowrap}
+input[type="range"],input[type="checkbox"]{accent-color:var(--accent);margin:0}
+.size input{width:clamp(74px,10vw,125px)}
+output{min-width:56px;color:var(--quiet);font-variant-numeric:tabular-nums}
+form input{min-width:0;flex:1;border:1px solid var(--rule);background:var(--paper);border-radius:5px;padding:7px 10px}
+form button{color:var(--sheet);background:var(--ink);border-color:var(--ink)}
+.controls section{padding:15px}
+.controls section+section{border-top:1px solid var(--rule)}
+h2{font-size:21px;font-weight:500;margin-bottom:10px}
+.buttons{display:flex;flex-wrap:wrap;gap:5px}
+.buttons button{font-size:13px}
+#library{margin:38px 0 55px;border-top:1px solid var(--rule);padding-top:18px}
+.library-head{display:flex;justify-content:space-between;align-items:center}
+#catalog{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(185px,1fr));gap:7px}
+#catalog li{border:1px solid var(--rule);border-radius:5px;background:var(--sheet);padding:8px;display:flex;flex-wrap:wrap;align-items:baseline;gap:7px}
+#catalog li span{margin-right:auto}
+#catalog li a{color:var(--quiet);font-size:12px}
+@media(max-width:760px){
+  .workbench{grid-template-columns:1fr}
+  .intro{margin:22px 0 17px}
+  .stage{height:325px}
+  .stage-tools{gap:10px;font-size:13px;padding:9px}
+  .stage-tools label{gap:4px}
+  .stage-tools select{max-width:116px}
+  form{padding:9px;gap:8px}
+}
+/* polish (Claude): action families, a quiet caption with the accent tick from the wordmark */
+.families{display:grid;gap:12px}
+.family h3{margin:0 0 6px;font-size:12px;font-weight:500;letter-spacing:.14em;color:var(--quiet)}
+.family h3::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:2px}
+.buttons button{transition:background-color .12s,border-color .12s,color .12s,transform .12s}
+.buttons button:active{transform:translateY(1px) scale(.97)}
+@media(prefers-reduced-motion:reduce){.buttons button{transition:none}.buttons button:active{transform:none}}

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN" data-catalog="/xiaoke/catalog.json">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="/favicon-32.png">
+  <title>小克的游乐场</title>
+  <link rel="stylesheet" href="/xiaoke/playground/style.css">
+  <script type="module" src="/xiaoke/playground/app.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wordmark"><span aria-hidden="true">●</span> 小克</div>
+    <a href="#library">素材库 ↓</a>
+  </header>
+  <main>
+    <section class="intro">
+      <h1>小克的游乐场</h1>
+      <p>我是小克，住在这台服务器里。点舞台，我走过去；点按钮，我演给你看。</p>
+    </section>
+    <div class="workbench">
+      <section class="player" aria-label="舞台">
+        <div class="stage" data-background="paper">
+          <canvas aria-label="小克互动舞台"></canvas>
+        </div>
+        <div class="stage-tools">
+          <label>背景 <select id="background"><option value="paper">纸张</option><option value="slide">白色幻灯片</option><option value="night">夜间</option><option value="code">代码</option></select></label>
+          <label class="size">尺寸 <input type="range" id="size" min="64" max="600" value="300"><output for="size">300 px</output></label>
+          <label><input type="checkbox" id="rim"> 贴纸边</label>
+        </div>
+        <form id="speech">
+          <label for="words">气泡</label>
+          <input id="words" maxlength="32" placeholder="我来带路。" required>
+          <button type="submit">说一下</button>
+        </form>
+      </section>
+      <aside class="controls">
+        <section>
+          <h2>心情</h2>
+          <div class="buttons" id="moods"></div>
+        </section>
+        <section>
+          <h2>动作</h2>
+          <div class="families" id="actions"></div>
+        </section>
+      </aside>
+    </div>
+    <section id="library">
+      <div class="library-head"><h2>素材库</h2><label for="kind">类别 <select id="kind"><option value="all">全部</option><option value="verb">动作</option><option value="idle">待机</option><option value="mood">心情定格</option><option value="prop">道具</option><option value="bubble">气泡</option><option value="effect">特效</option></select></label></div>
+      <ul id="catalog"></ul>
+    </section>
+  </main>
+</body>
+</html>

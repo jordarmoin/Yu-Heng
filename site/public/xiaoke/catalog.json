@@ -1,0 +1,3799 @@
+{
+  "version": 1,
+  "clips": [
+    {
+      "id": "feel",
+      "kind": "verb",
+      "action": "feel",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.5666666666666667,
+      "frames": 94,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 47,
+      "download": "stills/feel.png",
+      "webm": "clips/feel/clip.webm"
+    },
+    {
+      "id": "lookAt-L",
+      "kind": "verb",
+      "action": "lookAt",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/lookAt-L.png",
+      "webm": "clips/lookAt-L/clip.webm"
+    },
+    {
+      "id": "lookAt-R",
+      "kind": "verb",
+      "action": "lookAt",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/lookAt-R.png",
+      "webm": "clips/lookAt-R/clip.webm"
+    },
+    {
+      "id": "say",
+      "kind": "verb",
+      "action": "say",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.4166666666666665,
+      "frames": 145,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/say.png",
+      "webm": "clips/say/clip.webm"
+    },
+    {
+      "id": "wave-L",
+      "kind": "verb",
+      "action": "wave",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2,
+      "frames": 120,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 60,
+      "download": "stills/wave-L.png",
+      "webm": "clips/wave-L/clip.webm"
+    },
+    {
+      "id": "wave-R",
+      "kind": "verb",
+      "action": "wave",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2,
+      "frames": 120,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 60,
+      "download": "stills/wave-R.png",
+      "webm": "clips/wave-R/clip.webm"
+    },
+    {
+      "id": "popUp-L",
+      "kind": "verb",
+      "action": "popUp",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.6833333333333333,
+      "frames": 101,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 50,
+      "download": "stills/popUp-L.png",
+      "webm": "clips/popUp-L/clip.webm"
+    },
+    {
+      "id": "popUp-R",
+      "kind": "verb",
+      "action": "popUp",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.6833333333333333,
+      "frames": 101,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 50,
+      "download": "stills/popUp-R.png",
+      "webm": "clips/popUp-R/clip.webm"
+    },
+    {
+      "id": "ducks",
+      "kind": "verb",
+      "action": "ducks",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.9,
+      "frames": 114,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 57,
+      "download": "stills/ducks.png",
+      "webm": "clips/ducks/clip.webm"
+    },
+    {
+      "id": "peek-L",
+      "kind": "verb",
+      "action": "peek",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 41,
+      "download": "stills/peek-L.png",
+      "webm": "clips/peek-L/clip.webm"
+    },
+    {
+      "id": "peek-R",
+      "kind": "verb",
+      "action": "peek",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 41,
+      "download": "stills/peek-R.png",
+      "webm": "clips/peek-R/clip.webm"
+    },
+    {
+      "id": "inkOut",
+      "kind": "verb",
+      "action": "inkOut",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2,
+      "frames": 120,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 78,
+      "download": "stills/inkOut.png",
+      "webm": "clips/inkOut/clip.webm"
+    },
+    {
+      "id": "inkIn-L",
+      "kind": "verb",
+      "action": "inkIn",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.1,
+      "frames": 126,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/inkIn-L.png",
+      "webm": "clips/inkIn-L/clip.webm"
+    },
+    {
+      "id": "inkIn-R",
+      "kind": "verb",
+      "action": "inkIn",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.1,
+      "frames": 126,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/inkIn-R.png",
+      "webm": "clips/inkIn-R/clip.webm"
+    },
+    {
+      "id": "dropIn-L",
+      "kind": "verb",
+      "action": "dropIn",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2,
+      "frames": 120,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 79,
+      "download": "stills/dropIn-L.png",
+      "webm": "clips/dropIn-L/clip.webm"
+    },
+    {
+      "id": "dropIn-R",
+      "kind": "verb",
+      "action": "dropIn",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2,
+      "frames": 120,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 79,
+      "download": "stills/dropIn-R.png",
+      "webm": "clips/dropIn-R/clip.webm"
+    },
+    {
+      "id": "slideIn-L",
+      "kind": "verb",
+      "action": "slideIn",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 3.2333333333333334,
+      "frames": 194,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 97,
+      "download": "stills/slideIn-L.png",
+      "webm": "clips/slideIn-L/clip.webm"
+    },
+    {
+      "id": "slideIn-R",
+      "kind": "verb",
+      "action": "slideIn",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 3.2333333333333334,
+      "frames": 194,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 97,
+      "download": "stills/slideIn-R.png",
+      "webm": "clips/slideIn-R/clip.webm"
+    },
+    {
+      "id": "jetIn-L",
+      "kind": "verb",
+      "action": "jetIn",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.95,
+      "frames": 117,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 58,
+      "download": "stills/jetIn-L.png",
+      "webm": "clips/jetIn-L/clip.webm"
+    },
+    {
+      "id": "jetIn-R",
+      "kind": "verb",
+      "action": "jetIn",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.95,
+      "frames": 117,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 58,
+      "download": "stills/jetIn-R.png",
+      "webm": "clips/jetIn-R/clip.webm"
+    },
+    {
+      "id": "walkTo-L",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8833333333333333,
+      "frames": 113,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 56,
+      "download": "stills/walkTo-L.png",
+      "webm": "clips/walkTo-L/clip.webm"
+    },
+    {
+      "id": "walkTo-R",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8833333333333333,
+      "frames": 113,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 56,
+      "download": "stills/walkTo-R.png",
+      "webm": "clips/walkTo-R/clip.webm"
+    },
+    {
+      "id": "walkTo-happy-L",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "happy",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8166666666666667,
+      "frames": 109,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/walkTo-happy-L.png",
+      "webm": "clips/walkTo-happy-L/clip.webm"
+    },
+    {
+      "id": "walkTo-happy-R",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "happy",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8166666666666667,
+      "frames": 109,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/walkTo-happy-R.png",
+      "webm": "clips/walkTo-happy-R/clip.webm"
+    },
+    {
+      "id": "walkTo-sad-L",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "sad",
+      "side": -1,
+      "loop": false,
+      "duration": 2.15,
+      "frames": 129,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/walkTo-sad-L.png",
+      "webm": "clips/walkTo-sad-L/clip.webm"
+    },
+    {
+      "id": "walkTo-sad-R",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "sad",
+      "side": 1,
+      "loop": false,
+      "duration": 2.15,
+      "frames": 129,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/walkTo-sad-R.png",
+      "webm": "clips/walkTo-sad-R/clip.webm"
+    },
+    {
+      "id": "walkTo-nervous-L",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "nervous",
+      "side": -1,
+      "loop": false,
+      "duration": 1.7166666666666666,
+      "frames": 103,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 51,
+      "download": "stills/walkTo-nervous-L.png",
+      "webm": "clips/walkTo-nervous-L/clip.webm"
+    },
+    {
+      "id": "walkTo-nervous-R",
+      "kind": "verb",
+      "action": "walkTo",
+      "mood": "nervous",
+      "side": 1,
+      "loop": false,
+      "duration": 1.7166666666666666,
+      "frames": 103,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 51,
+      "download": "stills/walkTo-nervous-R.png",
+      "webm": "clips/walkTo-nervous-R/clip.webm"
+    },
+    {
+      "id": "runTo-L",
+      "kind": "verb",
+      "action": "runTo",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.45,
+      "frames": 87,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 43,
+      "download": "stills/runTo-L.png",
+      "webm": "clips/runTo-L/clip.webm"
+    },
+    {
+      "id": "runTo-R",
+      "kind": "verb",
+      "action": "runTo",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.45,
+      "frames": 87,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 43,
+      "download": "stills/runTo-R.png",
+      "webm": "clips/runTo-R/clip.webm"
+    },
+    {
+      "id": "hop",
+      "kind": "verb",
+      "action": "hop",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.35,
+      "frames": 81,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 40,
+      "download": "stills/hop.png",
+      "webm": "clips/hop/clip.webm"
+    },
+    {
+      "id": "jump",
+      "kind": "verb",
+      "action": "jump",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.7833333333333334,
+      "frames": 107,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 53,
+      "download": "stills/jump.png",
+      "webm": "clips/jump/clip.webm"
+    },
+    {
+      "id": "tiptoe-L",
+      "kind": "verb",
+      "action": "tiptoe",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.683333333333333,
+      "frames": 161,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 80,
+      "download": "stills/tiptoe-L.png",
+      "webm": "clips/tiptoe-L/clip.webm"
+    },
+    {
+      "id": "tiptoe-R",
+      "kind": "verb",
+      "action": "tiptoe",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.683333333333333,
+      "frames": 161,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 80,
+      "download": "stills/tiptoe-R.png",
+      "webm": "clips/tiptoe-R/clip.webm"
+    },
+    {
+      "id": "float",
+      "kind": "verb",
+      "action": "float",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 3.0166666666666666,
+      "frames": 181,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/float.png",
+      "webm": "clips/float/clip.webm"
+    },
+    {
+      "id": "climb-L",
+      "kind": "verb",
+      "action": "climb",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.6166666666666667,
+      "frames": 157,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 78,
+      "download": "stills/climb-L.png",
+      "webm": "clips/climb-L/clip.webm"
+    },
+    {
+      "id": "climb-R",
+      "kind": "verb",
+      "action": "climb",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.6166666666666667,
+      "frames": 157,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 78,
+      "download": "stills/climb-R.png",
+      "webm": "clips/climb-R/clip.webm"
+    },
+    {
+      "id": "slideDown-L",
+      "kind": "verb",
+      "action": "slideDown",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.95,
+      "frames": 117,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 58,
+      "download": "stills/slideDown-L.png",
+      "webm": "clips/slideDown-L/clip.webm"
+    },
+    {
+      "id": "slideDown-R",
+      "kind": "verb",
+      "action": "slideDown",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.95,
+      "frames": 117,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 58,
+      "download": "stills/slideDown-R.png",
+      "webm": "clips/slideDown-R/clip.webm"
+    },
+    {
+      "id": "pointAt-L",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-L.png",
+      "webm": "clips/pointAt-L/clip.webm"
+    },
+    {
+      "id": "pointAt-R",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-R.png",
+      "webm": "clips/pointAt-R/clip.webm"
+    },
+    {
+      "id": "pointAt-happy-L",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "happy",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-happy-L.png",
+      "webm": "clips/pointAt-happy-L/clip.webm"
+    },
+    {
+      "id": "pointAt-happy-R",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "happy",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-happy-R.png",
+      "webm": "clips/pointAt-happy-R/clip.webm"
+    },
+    {
+      "id": "pointAt-sad-L",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "sad",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-sad-L.png",
+      "webm": "clips/pointAt-sad-L/clip.webm"
+    },
+    {
+      "id": "pointAt-sad-R",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "sad",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-sad-R.png",
+      "webm": "clips/pointAt-sad-R/clip.webm"
+    },
+    {
+      "id": "pointAt-nervous-L",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "nervous",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-nervous-L.png",
+      "webm": "clips/pointAt-nervous-L/clip.webm"
+    },
+    {
+      "id": "pointAt-nervous-R",
+      "kind": "verb",
+      "action": "pointAt",
+      "mood": "nervous",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/pointAt-nervous-R.png",
+      "webm": "clips/pointAt-nervous-R/clip.webm"
+    },
+    {
+      "id": "present-L",
+      "kind": "verb",
+      "action": "present",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.05,
+      "frames": 123,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 61,
+      "download": "stills/present-L.png",
+      "webm": "clips/present-L/clip.webm"
+    },
+    {
+      "id": "present-R",
+      "kind": "verb",
+      "action": "present",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.05,
+      "frames": 123,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 61,
+      "download": "stills/present-R.png",
+      "webm": "clips/present-R/clip.webm"
+    },
+    {
+      "id": "holdUp",
+      "kind": "verb",
+      "action": "holdUp",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/holdUp.png",
+      "webm": "clips/holdUp/clip.webm"
+    },
+    {
+      "id": "circle-L",
+      "kind": "verb",
+      "action": "circle",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/circle-L.png",
+      "webm": "clips/circle-L/clip.webm"
+    },
+    {
+      "id": "circle-R",
+      "kind": "verb",
+      "action": "circle",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/circle-R.png",
+      "webm": "clips/circle-R/clip.webm"
+    },
+    {
+      "id": "underline-L",
+      "kind": "verb",
+      "action": "underline",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/underline-L.png",
+      "webm": "clips/underline-L/clip.webm"
+    },
+    {
+      "id": "underline-R",
+      "kind": "verb",
+      "action": "underline",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2666666666666666,
+      "frames": 136,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/underline-R.png",
+      "webm": "clips/underline-R/clip.webm"
+    },
+    {
+      "id": "count",
+      "kind": "verb",
+      "action": "count",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 3.433333333333333,
+      "frames": 206,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 103,
+      "download": "stills/count.png",
+      "webm": "clips/count/clip.webm"
+    },
+    {
+      "id": "magnify-L",
+      "kind": "verb",
+      "action": "magnify",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.1333333333333333,
+      "frames": 128,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/magnify-L.png",
+      "webm": "clips/magnify-L/clip.webm"
+    },
+    {
+      "id": "magnify-R",
+      "kind": "verb",
+      "action": "magnify",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.1333333333333333,
+      "frames": 128,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/magnify-R.png",
+      "webm": "clips/magnify-R/clip.webm"
+    },
+    {
+      "id": "nod",
+      "kind": "verb",
+      "action": "nod",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/nod.png",
+      "webm": "clips/nod/clip.webm"
+    },
+    {
+      "id": "shake",
+      "kind": "verb",
+      "action": "shake",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/shake.png",
+      "webm": "clips/shake/clip.webm"
+    },
+    {
+      "id": "shrug",
+      "kind": "verb",
+      "action": "shrug",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/shrug.png",
+      "webm": "clips/shrug/clip.webm"
+    },
+    {
+      "id": "think",
+      "kind": "verb",
+      "action": "think",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.95,
+      "frames": 177,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 88,
+      "download": "stills/think.png",
+      "webm": "clips/think/clip.webm"
+    },
+    {
+      "id": "listen-L",
+      "kind": "verb",
+      "action": "listen",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/listen-L.png",
+      "webm": "clips/listen-L/clip.webm"
+    },
+    {
+      "id": "listen-R",
+      "kind": "verb",
+      "action": "listen",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/listen-R.png",
+      "webm": "clips/listen-R/clip.webm"
+    },
+    {
+      "id": "explain",
+      "kind": "verb",
+      "action": "explain",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 2.95,
+      "frames": 177,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 88,
+      "download": "stills/explain.png",
+      "webm": "clips/explain/clip.webm"
+    },
+    {
+      "id": "tap-L",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-L.png",
+      "webm": "clips/tap-L/clip.webm"
+    },
+    {
+      "id": "tap-R",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-R.png",
+      "webm": "clips/tap-R/clip.webm"
+    },
+    {
+      "id": "tap-happy-L",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "happy",
+      "side": -1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-happy-L.png",
+      "webm": "clips/tap-happy-L/clip.webm"
+    },
+    {
+      "id": "tap-happy-R",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "happy",
+      "side": 1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-happy-R.png",
+      "webm": "clips/tap-happy-R/clip.webm"
+    },
+    {
+      "id": "tap-sad-L",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "sad",
+      "side": -1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-sad-L.png",
+      "webm": "clips/tap-sad-L/clip.webm"
+    },
+    {
+      "id": "tap-sad-R",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "sad",
+      "side": 1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-sad-R.png",
+      "webm": "clips/tap-sad-R/clip.webm"
+    },
+    {
+      "id": "tap-nervous-L",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "nervous",
+      "side": -1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-nervous-L.png",
+      "webm": "clips/tap-nervous-L/clip.webm"
+    },
+    {
+      "id": "tap-nervous-R",
+      "kind": "verb",
+      "action": "tap",
+      "mood": "nervous",
+      "side": 1,
+      "loop": false,
+      "duration": 1.55,
+      "frames": 93,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 46,
+      "download": "stills/tap-nervous-R.png",
+      "webm": "clips/tap-nervous-R/clip.webm"
+    },
+    {
+      "id": "doubleTap-L",
+      "kind": "verb",
+      "action": "doubleTap",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/doubleTap-L.png",
+      "webm": "clips/doubleTap-L/clip.webm"
+    },
+    {
+      "id": "doubleTap-R",
+      "kind": "verb",
+      "action": "doubleTap",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/doubleTap-R.png",
+      "webm": "clips/doubleTap-R/clip.webm"
+    },
+    {
+      "id": "longPress-L",
+      "kind": "verb",
+      "action": "longPress",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.183333333333333,
+      "frames": 131,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/longPress-L.png",
+      "webm": "clips/longPress-L/clip.webm"
+    },
+    {
+      "id": "longPress-R",
+      "kind": "verb",
+      "action": "longPress",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.183333333333333,
+      "frames": 131,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/longPress-R.png",
+      "webm": "clips/longPress-R/clip.webm"
+    },
+    {
+      "id": "drag-L",
+      "kind": "verb",
+      "action": "drag",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.066666666666667,
+      "frames": 124,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/drag-L.png",
+      "webm": "clips/drag-L/clip.webm"
+    },
+    {
+      "id": "drag-R",
+      "kind": "verb",
+      "action": "drag",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.066666666666667,
+      "frames": 124,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/drag-R.png",
+      "webm": "clips/drag-R/clip.webm"
+    },
+    {
+      "id": "type",
+      "kind": "verb",
+      "action": "type",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 3.0166666666666666,
+      "frames": 181,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/type.png",
+      "webm": "clips/type/clip.webm"
+    },
+    {
+      "id": "scroll-L",
+      "kind": "verb",
+      "action": "scroll",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/scroll-L.png",
+      "webm": "clips/scroll-L/clip.webm"
+    },
+    {
+      "id": "scroll-R",
+      "kind": "verb",
+      "action": "scroll",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/scroll-R.png",
+      "webm": "clips/scroll-R/clip.webm"
+    },
+    {
+      "id": "hover-L",
+      "kind": "verb",
+      "action": "hover",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/hover-L.png",
+      "webm": "clips/hover-L/clip.webm"
+    },
+    {
+      "id": "hover-R",
+      "kind": "verb",
+      "action": "hover",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/hover-R.png",
+      "webm": "clips/hover-R/clip.webm"
+    },
+    {
+      "id": "pull-L",
+      "kind": "verb",
+      "action": "pull",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.066666666666667,
+      "frames": 124,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/pull-L.png",
+      "webm": "clips/pull-L/clip.webm"
+    },
+    {
+      "id": "pull-R",
+      "kind": "verb",
+      "action": "pull",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.066666666666667,
+      "frames": 124,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/pull-R.png",
+      "webm": "clips/pull-R/clip.webm"
+    },
+    {
+      "id": "celebrate",
+      "kind": "verb",
+      "action": "celebrate",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.85,
+      "frames": 111,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 55,
+      "download": "stills/celebrate.png",
+      "webm": "clips/celebrate/clip.webm"
+    },
+    {
+      "id": "cheer",
+      "kind": "verb",
+      "action": "cheer",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 2.816666666666667,
+      "frames": 169,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 84,
+      "download": "stills/cheer.png",
+      "webm": "clips/cheer/clip.webm"
+    },
+    {
+      "id": "oops",
+      "kind": "verb",
+      "action": "oops",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/oops.png",
+      "webm": "clips/oops/clip.webm"
+    },
+    {
+      "id": "sigh",
+      "kind": "verb",
+      "action": "sigh",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.05,
+      "frames": 123,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 61,
+      "download": "stills/sigh.png",
+      "webm": "clips/sigh/clip.webm"
+    },
+    {
+      "id": "yawn",
+      "kind": "verb",
+      "action": "yawn",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.316666666666667,
+      "frames": 139,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/yawn.png",
+      "webm": "clips/yawn/clip.webm"
+    },
+    {
+      "id": "stretch",
+      "kind": "verb",
+      "action": "stretch",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.1,
+      "frames": 126,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/stretch.png",
+      "webm": "clips/stretch/clip.webm"
+    },
+    {
+      "id": "sleep",
+      "kind": "verb",
+      "action": "sleep",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 3.4166666666666665,
+      "frames": 205,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 102,
+      "download": "stills/sleep.png",
+      "webm": "clips/sleep/clip.webm"
+    },
+    {
+      "id": "wakeUp",
+      "kind": "verb",
+      "action": "wakeUp",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/wakeUp.png",
+      "webm": "clips/wakeUp/clip.webm"
+    },
+    {
+      "id": "giggle",
+      "kind": "verb",
+      "action": "giggle",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/giggle.png",
+      "webm": "clips/giggle/clip.webm"
+    },
+    {
+      "id": "facepalm",
+      "kind": "verb",
+      "action": "facepalm",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.2,
+      "frames": 132,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/facepalm.png",
+      "webm": "clips/facepalm/clip.webm"
+    },
+    {
+      "id": "armsMind",
+      "kind": "verb",
+      "action": "armsMind",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.7666666666666666,
+      "frames": 166,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 83,
+      "download": "stills/armsMind.png",
+      "webm": "clips/armsMind/clip.webm"
+    },
+    {
+      "id": "camouflage",
+      "kind": "verb",
+      "action": "camouflage",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.816666666666667,
+      "frames": 169,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 84,
+      "download": "stills/camouflage.png",
+      "webm": "clips/camouflage/clip.webm"
+    },
+    {
+      "id": "squeeze-L",
+      "kind": "verb",
+      "action": "squeeze",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/squeeze-L.png",
+      "webm": "clips/squeeze-L/clip.webm"
+    },
+    {
+      "id": "squeeze-R",
+      "kind": "verb",
+      "action": "squeeze",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 1.8,
+      "frames": 108,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 54,
+      "download": "stills/squeeze-R.png",
+      "webm": "clips/squeeze-R/clip.webm"
+    },
+    {
+      "id": "cling-L",
+      "kind": "verb",
+      "action": "cling",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.35,
+      "frames": 141,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/cling-L.png",
+      "webm": "clips/cling-L/clip.webm"
+    },
+    {
+      "id": "cling-R",
+      "kind": "verb",
+      "action": "cling",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.35,
+      "frames": 141,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/cling-R.png",
+      "webm": "clips/cling-R/clip.webm"
+    },
+    {
+      "id": "multitask",
+      "kind": "verb",
+      "action": "multitask",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 3.1666666666666665,
+      "frames": 190,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 95,
+      "download": "stills/multitask.png",
+      "webm": "clips/multitask/clip.webm"
+    },
+    {
+      "id": "juggle",
+      "kind": "verb",
+      "action": "juggle",
+      "mood": "neutral",
+      "side": 1,
+      "loop": true,
+      "duration": 3.316666666666667,
+      "frames": 199,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 99,
+      "download": "stills/juggle.png",
+      "webm": "clips/juggle/clip.webm"
+    },
+    {
+      "id": "carry-L",
+      "kind": "verb",
+      "action": "carry",
+      "mood": "neutral",
+      "side": -1,
+      "loop": false,
+      "duration": 2.466666666666667,
+      "frames": 148,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 74,
+      "download": "stills/carry-L.png",
+      "webm": "clips/carry-L/clip.webm"
+    },
+    {
+      "id": "carry-R",
+      "kind": "verb",
+      "action": "carry",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.466666666666667,
+      "frames": 148,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 74,
+      "download": "stills/carry-R.png",
+      "webm": "clips/carry-R/clip.webm"
+    },
+    {
+      "id": "batAway",
+      "kind": "verb",
+      "action": "batAway",
+      "mood": "neutral",
+      "side": 1,
+      "loop": false,
+      "duration": 2.4833333333333334,
+      "frames": 149,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 74,
+      "download": "stills/batAway.png",
+      "webm": "clips/batAway/clip.webm"
+    },
+    {
+      "id": "idle-neutral",
+      "kind": "idle",
+      "mood": "neutral",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-neutral.png",
+      "webm": "clips/idle-neutral/clip.webm"
+    },
+    {
+      "id": "mood-neutral",
+      "kind": "mood",
+      "mood": "neutral",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-neutral.png",
+      "webm": "clips/mood-neutral/clip.webm"
+    },
+    {
+      "id": "idle-happy",
+      "kind": "idle",
+      "mood": "happy",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-happy.png",
+      "webm": "clips/idle-happy/clip.webm"
+    },
+    {
+      "id": "mood-happy",
+      "kind": "mood",
+      "mood": "happy",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "happy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-happy.png",
+      "webm": "clips/mood-happy/clip.webm"
+    },
+    {
+      "id": "idle-joy",
+      "kind": "idle",
+      "mood": "joy",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "joy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-joy.png",
+      "webm": "clips/idle-joy/clip.webm"
+    },
+    {
+      "id": "mood-joy",
+      "kind": "mood",
+      "mood": "joy",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "joy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-joy.png",
+      "webm": "clips/mood-joy/clip.webm"
+    },
+    {
+      "id": "idle-curious",
+      "kind": "idle",
+      "mood": "curious",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "curious"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-curious.png",
+      "webm": "clips/idle-curious/clip.webm"
+    },
+    {
+      "id": "mood-curious",
+      "kind": "mood",
+      "mood": "curious",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "curious"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-curious.png",
+      "webm": "clips/mood-curious/clip.webm"
+    },
+    {
+      "id": "idle-proud",
+      "kind": "idle",
+      "mood": "proud",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "proud"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-proud.png",
+      "webm": "clips/idle-proud/clip.webm"
+    },
+    {
+      "id": "mood-proud",
+      "kind": "mood",
+      "mood": "proud",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "proud"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-proud.png",
+      "webm": "clips/mood-proud/clip.webm"
+    },
+    {
+      "id": "idle-shy",
+      "kind": "idle",
+      "mood": "shy",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "shy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-shy.png",
+      "webm": "clips/idle-shy/clip.webm"
+    },
+    {
+      "id": "mood-shy",
+      "kind": "mood",
+      "mood": "shy",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "shy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-shy.png",
+      "webm": "clips/mood-shy/clip.webm"
+    },
+    {
+      "id": "idle-nervous",
+      "kind": "idle",
+      "mood": "nervous",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-nervous.png",
+      "webm": "clips/idle-nervous/clip.webm"
+    },
+    {
+      "id": "mood-nervous",
+      "kind": "mood",
+      "mood": "nervous",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-nervous.png",
+      "webm": "clips/mood-nervous/clip.webm"
+    },
+    {
+      "id": "idle-determined",
+      "kind": "idle",
+      "mood": "determined",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "determined"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-determined.png",
+      "webm": "clips/idle-determined/clip.webm"
+    },
+    {
+      "id": "mood-determined",
+      "kind": "mood",
+      "mood": "determined",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "determined"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-determined.png",
+      "webm": "clips/mood-determined/clip.webm"
+    },
+    {
+      "id": "idle-angry",
+      "kind": "idle",
+      "mood": "angry",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "angry"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-angry.png",
+      "webm": "clips/idle-angry/clip.webm"
+    },
+    {
+      "id": "mood-angry",
+      "kind": "mood",
+      "mood": "angry",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "angry"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-angry.png",
+      "webm": "clips/mood-angry/clip.webm"
+    },
+    {
+      "id": "idle-sad",
+      "kind": "idle",
+      "mood": "sad",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-sad.png",
+      "webm": "clips/idle-sad/clip.webm"
+    },
+    {
+      "id": "mood-sad",
+      "kind": "mood",
+      "mood": "sad",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "sad"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-sad.png",
+      "webm": "clips/mood-sad/clip.webm"
+    },
+    {
+      "id": "idle-shock",
+      "kind": "idle",
+      "mood": "shock",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "shock"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-shock.png",
+      "webm": "clips/idle-shock/clip.webm"
+    },
+    {
+      "id": "mood-shock",
+      "kind": "mood",
+      "mood": "shock",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "shock"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-shock.png",
+      "webm": "clips/mood-shock/clip.webm"
+    },
+    {
+      "id": "idle-sleepy",
+      "kind": "idle",
+      "mood": "sleepy",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "sleepy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-sleepy.png",
+      "webm": "clips/idle-sleepy/clip.webm"
+    },
+    {
+      "id": "mood-sleepy",
+      "kind": "mood",
+      "mood": "sleepy",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "sleepy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-sleepy.png",
+      "webm": "clips/mood-sleepy/clip.webm"
+    },
+    {
+      "id": "idle-dizzy",
+      "kind": "idle",
+      "mood": "dizzy",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "dizzy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-dizzy.png",
+      "webm": "clips/idle-dizzy/clip.webm"
+    },
+    {
+      "id": "mood-dizzy",
+      "kind": "mood",
+      "mood": "dizzy",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "dizzy"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-dizzy.png",
+      "webm": "clips/mood-dizzy/clip.webm"
+    },
+    {
+      "id": "idle-excited",
+      "kind": "idle",
+      "mood": "excited",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "excited"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-excited.png",
+      "webm": "clips/idle-excited/clip.webm"
+    },
+    {
+      "id": "mood-excited",
+      "kind": "mood",
+      "mood": "excited",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "excited"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-excited.png",
+      "webm": "clips/mood-excited/clip.webm"
+    },
+    {
+      "id": "idle-thinking",
+      "kind": "idle",
+      "mood": "thinking",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "thinking"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-thinking.png",
+      "webm": "clips/idle-thinking/clip.webm"
+    },
+    {
+      "id": "mood-thinking",
+      "kind": "mood",
+      "mood": "thinking",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "thinking"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-thinking.png",
+      "webm": "clips/mood-thinking/clip.webm"
+    },
+    {
+      "id": "idle-confused",
+      "kind": "idle",
+      "mood": "confused",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "confused"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-confused.png",
+      "webm": "clips/idle-confused/clip.webm"
+    },
+    {
+      "id": "mood-confused",
+      "kind": "mood",
+      "mood": "confused",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "confused"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-confused.png",
+      "webm": "clips/mood-confused/clip.webm"
+    },
+    {
+      "id": "idle-relieved",
+      "kind": "idle",
+      "mood": "relieved",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "relieved"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-relieved.png",
+      "webm": "clips/idle-relieved/clip.webm"
+    },
+    {
+      "id": "mood-relieved",
+      "kind": "mood",
+      "mood": "relieved",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "relieved"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-relieved.png",
+      "webm": "clips/mood-relieved/clip.webm"
+    },
+    {
+      "id": "idle-embarrassed",
+      "kind": "idle",
+      "mood": "embarrassed",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "embarrassed"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-embarrassed.png",
+      "webm": "clips/idle-embarrassed/clip.webm"
+    },
+    {
+      "id": "mood-embarrassed",
+      "kind": "mood",
+      "mood": "embarrassed",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "embarrassed"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-embarrassed.png",
+      "webm": "clips/mood-embarrassed/clip.webm"
+    },
+    {
+      "id": "idle-bored",
+      "kind": "idle",
+      "mood": "bored",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "bored"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-bored.png",
+      "webm": "clips/idle-bored/clip.webm"
+    },
+    {
+      "id": "mood-bored",
+      "kind": "mood",
+      "mood": "bored",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "bored"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-bored.png",
+      "webm": "clips/mood-bored/clip.webm"
+    },
+    {
+      "id": "idle-focused",
+      "kind": "idle",
+      "mood": "focused",
+      "loop": true,
+      "duration": 3,
+      "frames": 180,
+      "fps": 60,
+      "moods": [
+        "focused"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 90,
+      "download": "stills/idle-focused.png",
+      "webm": "clips/idle-focused/clip.webm"
+    },
+    {
+      "id": "mood-focused",
+      "kind": "mood",
+      "mood": "focused",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [
+        "focused"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/mood-focused.png",
+      "webm": "clips/mood-focused/clip.webm"
+    },
+    {
+      "id": "prop-pointer",
+      "kind": "prop",
+      "prop": "pointer",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-pointer.png",
+      "webm": "clips/prop-pointer/clip.webm"
+    },
+    {
+      "id": "prop-magnifier",
+      "kind": "prop",
+      "prop": "magnifier",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-magnifier.png",
+      "webm": "clips/prop-magnifier/clip.webm"
+    },
+    {
+      "id": "prop-laptop",
+      "kind": "prop",
+      "prop": "laptop",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-laptop.png",
+      "webm": "clips/prop-laptop/clip.webm"
+    },
+    {
+      "id": "prop-keyboard",
+      "kind": "prop",
+      "prop": "keyboard",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-keyboard.png",
+      "webm": "clips/prop-keyboard/clip.webm"
+    },
+    {
+      "id": "prop-sign",
+      "kind": "prop",
+      "prop": "sign",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-sign.png",
+      "webm": "clips/prop-sign/clip.webm"
+    },
+    {
+      "id": "prop-server-front",
+      "kind": "prop",
+      "prop": "server",
+      "variant": "front",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-server-front.png",
+      "webm": "clips/prop-server-front/clip.webm"
+    },
+    {
+      "id": "prop-server-brain",
+      "kind": "prop",
+      "prop": "server",
+      "variant": "brain",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-server-brain.png",
+      "webm": "clips/prop-server-brain/clip.webm"
+    },
+    {
+      "id": "prop-server-box",
+      "kind": "prop",
+      "prop": "server",
+      "variant": "box",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-server-box.png",
+      "webm": "clips/prop-server-box/clip.webm"
+    },
+    {
+      "id": "prop-cardboard",
+      "kind": "prop",
+      "prop": "cardboard",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-cardboard.png",
+      "webm": "clips/prop-cardboard/clip.webm"
+    },
+    {
+      "id": "prop-packet",
+      "kind": "prop",
+      "prop": "packet",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-packet.png",
+      "webm": "clips/prop-packet/clip.webm"
+    },
+    {
+      "id": "prop-cable",
+      "kind": "prop",
+      "prop": "cable",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-cable.png",
+      "webm": "clips/prop-cable/clip.webm"
+    },
+    {
+      "id": "prop-wrench",
+      "kind": "prop",
+      "prop": "wrench",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-wrench.png",
+      "webm": "clips/prop-wrench/clip.webm"
+    },
+    {
+      "id": "prop-hat",
+      "kind": "prop",
+      "prop": "hat",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-hat.png",
+      "webm": "clips/prop-hat/clip.webm"
+    },
+    {
+      "id": "prop-coffee",
+      "kind": "prop",
+      "prop": "coffee",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-coffee.png",
+      "webm": "clips/prop-coffee/clip.webm"
+    },
+    {
+      "id": "prop-flag",
+      "kind": "prop",
+      "prop": "flag",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-flag.png",
+      "webm": "clips/prop-flag/clip.webm"
+    },
+    {
+      "id": "prop-lever",
+      "kind": "prop",
+      "prop": "lever",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-lever.png",
+      "webm": "clips/prop-lever/clip.webm"
+    },
+    {
+      "id": "prop-stamp",
+      "kind": "prop",
+      "prop": "stamp",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-stamp.png",
+      "webm": "clips/prop-stamp/clip.webm"
+    },
+    {
+      "id": "prop-bulb",
+      "kind": "prop",
+      "prop": "bulb",
+      "loop": false,
+      "duration": 0.016666666666666666,
+      "frames": 1,
+      "fps": 60,
+      "moods": [],
+      "anchor": [
+        960,
+        535
+      ],
+      "keyFrame": 0,
+      "download": "stills/prop-bulb.png",
+      "webm": "clips/prop-bulb/clip.webm"
+    },
+    {
+      "id": "bubble-whisper",
+      "kind": "bubble",
+      "style": "whisper",
+      "mood": "neutral",
+      "loop": false,
+      "duration": 2.216666666666667,
+      "frames": 133,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/bubble-whisper.png",
+      "webm": "clips/bubble-whisper/clip.webm"
+    },
+    {
+      "id": "bubble-list",
+      "kind": "bubble",
+      "style": "list",
+      "mood": "neutral",
+      "loop": false,
+      "duration": 2.3666666666666667,
+      "frames": 142,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 73,
+      "download": "stills/bubble-list.png",
+      "webm": "clips/bubble-list/clip.webm"
+    },
+    {
+      "id": "bubble-card",
+      "kind": "bubble",
+      "style": "card",
+      "mood": "neutral",
+      "loop": false,
+      "duration": 2.15,
+      "frames": 129,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/bubble-card.png",
+      "webm": "clips/bubble-card/clip.webm"
+    },
+    {
+      "id": "bubble-nervous",
+      "kind": "bubble",
+      "style": "nervous",
+      "mood": "nervous",
+      "loop": false,
+      "duration": 2.15,
+      "frames": 129,
+      "fps": 60,
+      "moods": [
+        "nervous"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/bubble-nervous.png",
+      "webm": "clips/bubble-nervous/clip.webm"
+    },
+    {
+      "id": "bubble-shout",
+      "kind": "bubble",
+      "style": "shout",
+      "mood": "neutral",
+      "loop": false,
+      "duration": 2.0833333333333335,
+      "frames": 125,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 62,
+      "download": "stills/bubble-shout.png",
+      "webm": "clips/bubble-shout/clip.webm"
+    },
+    {
+      "id": "fx-ripple",
+      "kind": "effect",
+      "effect": "ripple",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-ripple.png",
+      "webm": "clips/fx-ripple/clip.webm"
+    },
+    {
+      "id": "fx-sparkle",
+      "kind": "effect",
+      "effect": "sparkle",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-sparkle.png",
+      "webm": "clips/fx-sparkle/clip.webm"
+    },
+    {
+      "id": "fx-sweat",
+      "kind": "effect",
+      "effect": "sweat",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-sweat.png",
+      "webm": "clips/fx-sweat/clip.webm"
+    },
+    {
+      "id": "fx-dust",
+      "kind": "effect",
+      "effect": "dust",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-dust.png",
+      "webm": "clips/fx-dust/clip.webm"
+    },
+    {
+      "id": "fx-ink",
+      "kind": "effect",
+      "effect": "ink",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-ink.png",
+      "webm": "clips/fx-ink/clip.webm"
+    },
+    {
+      "id": "fx-inkTrail",
+      "kind": "effect",
+      "effect": "inkTrail",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-inkTrail.png",
+      "webm": "clips/fx-inkTrail/clip.webm"
+    },
+    {
+      "id": "fx-trail",
+      "kind": "effect",
+      "effect": "trail",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-trail.png",
+      "webm": "clips/fx-trail/clip.webm"
+    },
+    {
+      "id": "fx-speedLines",
+      "kind": "effect",
+      "effect": "speedLines",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-speedLines.png",
+      "webm": "clips/fx-speedLines/clip.webm"
+    },
+    {
+      "id": "fx-heart",
+      "kind": "effect",
+      "effect": "heart",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-heart.png",
+      "webm": "clips/fx-heart/clip.webm"
+    },
+    {
+      "id": "fx-anger",
+      "kind": "effect",
+      "effect": "anger",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-anger.png",
+      "webm": "clips/fx-anger/clip.webm"
+    },
+    {
+      "id": "fx-question",
+      "kind": "effect",
+      "effect": "question",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-question.png",
+      "webm": "clips/fx-question/clip.webm"
+    },
+    {
+      "id": "fx-exclaim",
+      "kind": "effect",
+      "effect": "exclaim",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-exclaim.png",
+      "webm": "clips/fx-exclaim/clip.webm"
+    },
+    {
+      "id": "fx-zzz",
+      "kind": "effect",
+      "effect": "zzz",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-zzz.png",
+      "webm": "clips/fx-zzz/clip.webm"
+    },
+    {
+      "id": "fx-notes",
+      "kind": "effect",
+      "effect": "notes",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-notes.png",
+      "webm": "clips/fx-notes/clip.webm"
+    },
+    {
+      "id": "fx-confetti",
+      "kind": "effect",
+      "effect": "confetti",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-confetti.png",
+      "webm": "clips/fx-confetti/clip.webm"
+    },
+    {
+      "id": "fx-bulb",
+      "kind": "effect",
+      "effect": "bulb",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-bulb.png",
+      "webm": "clips/fx-bulb/clip.webm"
+    },
+    {
+      "id": "fx-dizzy",
+      "kind": "effect",
+      "effect": "dizzy",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-dizzy.png",
+      "webm": "clips/fx-dizzy/clip.webm"
+    },
+    {
+      "id": "fx-steam",
+      "kind": "effect",
+      "effect": "steam",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-steam.png",
+      "webm": "clips/fx-steam/clip.webm"
+    },
+    {
+      "id": "fx-tears",
+      "kind": "effect",
+      "effect": "tears",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-tears.png",
+      "webm": "clips/fx-tears/clip.webm"
+    },
+    {
+      "id": "fx-smear",
+      "kind": "effect",
+      "effect": "smear",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-smear.png",
+      "webm": "clips/fx-smear/clip.webm"
+    },
+    {
+      "id": "fx-fillRing",
+      "kind": "effect",
+      "effect": "fillRing",
+      "loop": false,
+      "duration": 1.6,
+      "frames": 96,
+      "fps": 60,
+      "moods": [
+        "neutral"
+      ],
+      "anchor": [
+        960,
+        900
+      ],
+      "keyFrame": 38,
+      "download": "stills/fx-fillRing.png",
+      "webm": "clips/fx-fillRing/clip.webm"
+    }
+  ]
+}

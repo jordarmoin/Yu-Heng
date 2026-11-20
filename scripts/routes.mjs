@@ -16,7 +16,11 @@ export function pages(root = process.cwd()) {
       if (e.isDirectory() && !['media', 'files'].includes(e.name)) walk(path.join(dir, e.name), rel ? `${rel}/${e.name}` : e.name);
   };
   walk(path.join(root, 'content/works'));
-  return ['zh', 'en'].flatMap(lang => [`/${lang}`, `/${lang}/list`, ...works.sort().map(w => `/${lang}/works/${w}`)]);
+  const publicDir = path.join(root, 'site/public');
+  const staticPages = fs.existsSync(publicDir) ? fs.readdirSync(publicDir, { withFileTypes: true })
+    .filter(e => e.isDirectory() && fs.existsSync(path.join(publicDir, e.name, 'index.html')))
+    .map(e => '/' + e.name).sort() : [];
+  return [...['zh', 'en'].flatMap(lang => [`/${lang}`, `/${lang}/list`, ...works.sort().map(w => `/${lang}/works/${w}`)]), ...staticPages];
 }
 
 export function syncRoutes(root = process.cwd()) {
