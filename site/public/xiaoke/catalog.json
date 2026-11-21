@@ -1,5 +1,21 @@
 {
   "version": 1,
+  "voice": {
+    "sampleRate": 48000,
+    "license": "CC0-1.0",
+    "readme": "assets/sfx/README.md",
+    "glyph": [
+      "assets/sfx/voice-01.wav",
+      "assets/sfx/voice-02.wav",
+      "assets/sfx/voice-03.wav",
+      "assets/sfx/voice-04.wav",
+      "assets/sfx/voice-05.wav",
+      "assets/sfx/voice-06.wav",
+      "assets/sfx/voice-07.wav",
+      "assets/sfx/voice-08.wav"
+    ],
+    "end": "assets/sfx/voice-end.wav"
+  },
   "clips": [
     {
       "id": "feel",

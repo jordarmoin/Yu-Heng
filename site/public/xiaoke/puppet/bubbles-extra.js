@@ -1,4 +1,4 @@
-import { BUBBLE, drawBubble } from './bubble.js';
+import { BUBBLE, bubbleVoiceEvents, drawBubble } from './bubble.js';
 import { clamp, ease, hash } from './math.js';
 import { WEB } from './palette.js';
 
@@ -15,11 +15,17 @@ defineBubbleStyle('whisper', (ctx, bubble, time, options) => {
 defineBubbleStyle('card', (ctx, bubble, time, options) => {
   drawBubble(ctx, { ...bubble, style: 'speech', w: bubble.w ?? 350 }, time, options);
 });
-defineBubbleStyle('list', (ctx, bubble, time, options) => {
+function listBubble(bubble) {
   const lines = bubble.text.split('\n').slice(0, 4);
-  const marked = lines.map(line => '✓ ' + line).join('\n');
-  drawBubble(ctx, { ...bubble, style: 'speech', text: marked, cps: (bubble.cps ?? 14) * marked.length / Math.max(bubble.text.length, 1) }, time, options);
-});
+  const text = lines.map(line => '✓ ' + line).join('\n');
+  return { ...bubble, style: 'speech', text, cps: (bubble.cps ?? 14) * text.length / Math.max(bubble.text.length, 1) };
+}
+defineBubbleStyle('list', (ctx, bubble, time, options) => drawBubble(ctx, listBubble(bubble), time, options));
+
+export function extendedBubbleVoiceEvents(bubble) {
+  const rendered = bubble.style === 'list' ? listBubble(bubble) : bubble;
+  return bubbleVoiceEvents(rendered);
+}
 
 export function drawExtendedBubble(ctx, bubble, time, options, nervous, swat) {
   const { tip } = options;

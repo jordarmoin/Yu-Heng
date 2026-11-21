@@ -1,6 +1,6 @@
 import { Actor } from './actor.js';
 import { drawFx } from './fx.js';
-import { drawExtendedBubble } from './bubbles-extra.js';
+import { drawExtendedBubble, extendedBubbleVoiceEvents } from './bubbles-extra.js';
 import { clamp, lerp, hash } from './math.js';
 
 const step = 1 / 60;
@@ -19,6 +19,10 @@ function atOrBefore(points, t, last) {
 }
 
 export class CachedActor extends Actor {
+  voiceEvents() {
+    return this.bubbles.flatMap(extendedBubbleVoiceEvents).sort((a, b) => a.t - b.t);
+  }
+
   constructor(options) {
     super(options);
     this.life = { times: [0], sums: [0], tempos: [], index: 0 };

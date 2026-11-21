@@ -12,7 +12,22 @@ export const BUBBLE = {
   codeFill: '#1E1F24', codeText: '#ECE5D8', codeAccent: WEB.accentNight,
 };
 
-export function bubbleDuration(b) { return 0.2 + b.text.length / (b.cps ?? 14) + (b.hold ?? 1.6) + 0.24; }
+const TYPE_START = 0.2;
+const typingRate = b => b.cps ?? 14;
+const glyphCount = (b, elapsed) => Math.floor(Math.max(0, elapsed - TYPE_START) * typingRate(b) + 1e-9);
+const glyphTime = (b, index) => TYPE_START + (index + 1) / typingRate(b);
+
+export function bubbleVoiceEvents(b) {
+  // drawBubble wraps the text but consumes no typing slot for a hard line break.
+  return Array.from(b.text.replaceAll('\n', '')).flatMap((glyph, index) => {
+    const t = b.t0 + glyphTime(b, index);
+    if (/[，。？！]/u.test(glyph)) return [{ t, kind: 'end' }];
+    if (glyph === '✓' || /[\s\p{P}\p{Cf}]/u.test(glyph)) return [];
+    return [{ t, kind: 'glyph' }];
+  });
+}
+
+export function bubbleDuration(b) { return TYPE_START + b.text.length / typingRate(b) + (b.hold ?? 1.6) + 0.24; }
 
 function wrap(ctx, text, w) {
   const out = []; let line = '';
@@ -111,7 +126,7 @@ export function drawBubble(ctx, b, τ, o) {
     ctx.restore();
   }
   // typed text
-  const shown = Math.floor(Math.max(0, τ - 0.2) * (b.cps ?? 14));
+  const shown = glyphCount(b, τ);
   let left = shown;
   ctx.fillStyle = style === 'code' ? B.codeText : B.text;
   ctx.textBaseline = 'alphabetic'; ctx.textAlign = 'left';
@@ -125,7 +140,7 @@ export function drawBubble(ctx, b, τ, o) {
   });
   if (b.sub && left > -2) {
     ctx.font = B.subFont; ctx.fillStyle = B.sub;
-    ctx.globalAlpha *= clamp((τ - 0.2 - b.text.length / (b.cps ?? 14)) / 0.3);
+    ctx.globalAlpha *= clamp((τ - TYPE_START - b.text.length / typingRate(b)) / 0.3);
     ctx.fillText(b.sub, x + B.pad + 2, y + h - B.pad + 4);
   }
   ctx.restore();

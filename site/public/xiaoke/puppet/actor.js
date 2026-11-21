@@ -11,7 +11,7 @@ import { pose as mkPose, toLocal, RX } from './rig.js';
 import { MOODS, blendMood } from './moods.js';
 import { SKIN, skinToward } from './palette.js';
 import { TAU, clamp, lerp, ease, springStep, wobble, hash, mixHex } from './math.js';
-import { drawBubble, bubbleDuration } from './bubble.js';
+import { drawBubble, bubbleDuration, bubbleVoiceEvents } from './bubble.js';
 import { drawFx } from './fx.js';
 import { drawXiaoke } from './draw.js';
 
@@ -88,6 +88,11 @@ export class Actor {
     this.bubbles.push(b);
     if (o.wait) this.cursor += b.dur - 0.2;
     return this;
+  }
+
+  /** Audible typing events, in actor timeline seconds. */
+  voiceEvents() {
+    return this.bubbles.flatMap(bubbleVoiceEvents).sort((a, b) => a.t - b.t);
   }
 
   // ------------------------------------------------------------- state lookups

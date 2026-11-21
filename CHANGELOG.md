@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+### 2026-11-20 · Add Xiao Ke’s letter-by-letter bubble sound
+
+- Add nine original CC0 paper taps to the Xiao Ke playground and asset catalogue. The toggle plays each tap as its character appears. WAV downloads and the license are available in the playground.
+
+
 ### 2026-11-20 · Fix the Xiao Ke gallery module MIME type (Codex, requested by owner)
 
 - Map the relative actions module to a byte-identical JS file so Chrome receives a JavaScript MIME type from EdgeOne. Verified both viewports under a server configured to serve .mjs as octet-stream.

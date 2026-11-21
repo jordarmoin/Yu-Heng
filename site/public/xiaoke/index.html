@@ -33,6 +33,7 @@
           <label for="words">气泡</label>
           <input id="words" maxlength="32" placeholder="我来带路。" required>
           <button type="submit">说一下</button>
+          <label><input type="checkbox" id="bubble-voice" checked> 打字声</label>
         </form>
       </section>
       <aside class="controls">
@@ -48,6 +49,7 @@
     </div>
     <section id="library">
       <div class="library-head"><h2>素材库</h2><label for="kind">类别 <select id="kind"><option value="all">全部</option><option value="verb">动作</option><option value="idle">待机</option><option value="mood">心情定格</option><option value="prop">道具</option><option value="bubble">气泡</option><option value="effect">特效</option></select></label></div>
+      <details id="voice-assets" hidden><summary>小克打字声 · WAV</summary><ul></ul></details>
       <ul id="catalog"></ul>
     </section>
   </main>

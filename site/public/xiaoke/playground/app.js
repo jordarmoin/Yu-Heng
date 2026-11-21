@@ -9,6 +9,46 @@ const actor = new LiveActor({ seed: 11 });
 const start = performance.now();
 const size = document.querySelector('#size');
 const rim = document.querySelector('#rim');
+const voiceToggle = document.querySelector('#bubble-voice');
+const voiceAssets = document.querySelector('#voice-assets');
+let voiceFiles, voiceContext, voiceBuffers, voiceBus;
+let previousTime = 0;
+
+function unlockVoice() {
+  if (!voiceToggle.checked || !voiceFiles) return;
+  if (!voiceContext) {
+    voiceContext = new AudioContext();
+    voiceBus = voiceContext.createGain();
+    voiceBus.gain.value = 0.24;
+    voiceBus.connect(voiceContext.destination);
+    const decode = async url => {
+      const response = await fetch(url);
+      if (!response.ok) throw Error('Voice sample request failed');
+      return voiceContext.decodeAudioData(await response.arrayBuffer());
+    };
+    Promise.all([Promise.all(voiceFiles.glyph.map(decode)), decode(voiceFiles.end)]).then(([glyph, end]) => {
+      voiceBuffers = { glyph, end };
+    }).catch(() => { voiceToggle.disabled = true; });
+  }
+  void voiceContext.resume();
+}
+
+function playVoice(t) {
+  if (voiceToggle.checked && voiceBuffers && voiceContext.state === 'running') {
+    for (const { t: at, kind } of actor.voiceEvents()) {
+      if (at <= Math.max(previousTime, t - .08) || at > t) continue;
+      const sample = kind === 'end' ? voiceBuffers.end
+        : voiceBuffers.glyph[Math.floor(Math.random() * voiceBuffers.glyph.length)];
+      const source = voiceContext.createBufferSource();
+      source.buffer = sample;
+      source.connect(voiceBus);
+      source.start(voiceContext.currentTime + Math.max(0, at - previousTime - .018));
+    }
+  }
+  previousTime = t;
+}
+
+voiceToggle.addEventListener('change', unlockVoice);
 let width = 0, height = 0;
 let selected = 'neutral';
 let side = 1;
@@ -48,6 +88,7 @@ function resize() {
 function draw(time) {
   resize();
   const t = (time - start) / 1000;
+  playVoice(Math.max(0, t));
   actor.trim(Math.max(0, t));
   actor.rim = Number(rim.checked);
   env.beginFrame(width, height);
@@ -96,6 +137,7 @@ buttons(moods, MOOD_LABELS, name => {
 });
 markMood();
 const onAction = name => {
+  unlockVoice();
   const t = now();
   actor.trim(t);
   actor.at(Math.max(t, ...actor.segs.map(s => s.t1)));
@@ -135,7 +177,10 @@ size.addEventListener('input', () => {
 document.querySelector('#speech').addEventListener('submit', event => {
   event.preventDefault();
   const text = document.querySelector('#words').value.trim();
-  if (text) actor.queue(now(), 'say', text, { w: Math.min(300, width - 48) });
+  if (text) {
+    unlockVoice();
+    actor.queue(now(), 'say', text, { w: Math.min(300, width - 48) });
+  }
 });
 
 const catalog = document.querySelector('#catalog');
@@ -145,7 +190,34 @@ try {
   const response = await fetch(manifest || '../library/catalog.json');
   const assetURL = path => new URL(path, response.url).href;
   if (!response.ok) throw Error('Catalog request failed');
-  const { clips } = await response.json();
+  const { clips, voice } = await response.json();
+  if (voice) {
+    const voiceURL = path => manifest ? assetURL(path) : new URL('../' + path, response.url).href;
+    voiceFiles = { glyph: voice.glyph.map(voiceURL), end: voiceURL(voice.end) };
+    const list = voiceAssets.querySelector('ul');
+    for (const [index, url] of [...voiceFiles.glyph, voiceFiles.end, voiceURL(voice.readme)].entries()) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = new URL(url).pathname.split('/').at(-1);
+      link.textContent = index < voiceFiles.glyph.length ? '字音 ' + (index + 1)
+        : index === voiceFiles.glyph.length ? '收尾音' : 'CC0 授权说明';
+      item.append(link);
+      list.append(item);
+    }
+    voiceAssets.hidden = false;
+    // Fetch while the user chooses an action, and decode after a gesture enables audio.
+    for (const url of [...voiceFiles.glyph, voiceFiles.end]) {
+      const preload = document.createElement('link');
+      preload.rel = 'preload';
+      preload.as = 'fetch';
+      preload.crossOrigin = 'anonymous';
+      preload.href = url;
+      document.head.append(preload);
+    }
+  } else {
+    voiceToggle.disabled = true;
+  }
   const refresh = () => {
     catalog.replaceChildren();
     for (const clip of clips.filter(c => kind.value === 'all' || c.kind === kind.value)) {
